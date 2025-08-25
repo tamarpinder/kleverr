@@ -960,6 +960,26 @@
   text-transform: none !important;
 }
 
+/* Additional targeted fixes for specific problem elements */
+div.text-block-37 {
+  text-transform: none !important;
+}
+
+.div-block-52 .text-block-37 {
+  text-transform: none !important;
+}
+
+/* Force override any Webflow capitalization */
+[class*="text-block"] {
+  text-transform: none !important;
+}
+
+[class*="text-block"].heading,
+[class*="text-block"][class*="title"],
+[class*="text-block"][class*="heading"] {
+  text-transform: initial !important;
+}
+
 /* Fix auto-capitalization for description texts */
 [data-i18n="hero.description"],
 [data-i18n="sections.aiDescription"],

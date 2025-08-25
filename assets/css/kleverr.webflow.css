@@ -5506,7 +5506,7 @@ figcaption {
 
 .text-block-34 {
   color: #fff;
-  text-transform: capitalize;
+  text-transform: none;
   margin-top: 40px;
   margin-left: auto;
   margin-right: 0;
@@ -5648,7 +5648,7 @@ figcaption {
 }
 
 .text-block-37 {
-  text-transform: capitalize;
+  text-transform: none;
   margin-top: 48px;
   font-family: Inter, sans-serif;
   font-size: 20px;
