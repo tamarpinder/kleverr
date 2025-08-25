@@ -1,0 +1,123 @@
+{
+  "hero": {
+    "title": "Construyendo Un Mundo Laboral Más Inteligente.",
+    "description": "Exploramos estrategias de vanguardia y tecnologías transformadoras que redefinen la forma en que trabajas, fomentando la colaboración, sostenibilidad y adaptabilidad.",
+    "cta": "Comenzar"
+  },
+  "nav": {
+    "about": "Acerca de",
+    "services": "Servicios",
+    "insights": "Perspectivas",
+    "contact": "Contacto",
+    "consultation": "Consulta Gratuita"
+  },
+  "sections": {
+    "ourServices": "Nuestros Servicios",
+    "businessSolutions": "Explora Nuestras Soluciones Empresariales",
+    "aiAutomation": "Maestría en Automatización IA",
+    "aiDescription": "Experimenta el futuro de la automatización empresarial con nuestras herramientas de IA de vanguardia y soluciones inteligentes.",
+    "livingPrototypes": "Prototipos Vivos",
+    "livingPrototypesDesc": "Experimenta nuestras soluciones de vanguardia en acción. Estos no son solo demos—son prototipos completamente funcionales que muestran el futuro de la tecnología empresarial.",
+    "successStories": "Historias de Éxito Que Inspiran",
+    "successStoriesDesc": "Descubre cómo hemos transformado empresas en todas las industrias con soluciones tecnológicas innovadoras.",
+    "vision2035": "Laboratorio Visión 2035",
+    "vision2035Desc": "Adéntrate en el futuro de la tecnología. Experimenta las soluciones del mañana hoy con nuestra vista previa impulsada por quantum de herramientas empresariales de próxima generación."
+  },
+  "about": {
+    "title": "A medida que el ritmo de cambio aumenta, las grandes organizaciones son las que exploran nuevas oportunidades.",
+    "description": "Somos arquitectos de la innovación, pioneros del avance tecnológico y socios en tu éxito. Como un Equipo de Estrategas dinámico y visionario, estamos dedicados a remodelar industrias y empoderar empresas para navegar la era digital con confianza."
+  },
+  "cta": {
+    "getStarted": "Comenzar",
+    "explore": "Explorar",
+    "startHere": "Empezar Aquí",
+    "getInTouch": "Contáctanos",
+    "learnMore": "Saber Más",
+    "tryDemo": "Probar Demo",
+    "launchDemo": "Lanzar Demo",
+    "experienceDemo": "Experimentar Demo"
+  },
+  "prototypes": {
+    "quantumAnalytics": {
+      "title": "Motor de Análisis Quantum",
+      "description": "Inteligencia empresarial en tiempo real impulsada por algoritmos de computación quantum. Procesa millones de puntos de datos instantáneamente.",
+      "cta": "Lanzar Demo Quantum"
+    },
+    "neuralAutomation": {
+      "title": "Automatización de Flujos Neurales",
+      "description": "IA que aprende tus procesos empresariales y crea flujos de automatización inteligentes sin codificación.",
+      "cta": "Probar IA Neural"
+    },
+    "holoSecurity": {
+      "title": "Consola de Seguridad Holográfica",
+      "description": "Visualización 3D de tu infraestructura de seguridad con detección predictiva de amenazas y encriptación quantum.",
+      "cta": "Entrar Centro Seguridad"
+    },
+    "metaverseCollab": {
+      "title": "Espacio de Colaboración Metaverso",
+      "description": "Reuniones virtuales inmersivas y colaboración en entornos 3D fotorealistas con retroalimentación háptica.",
+      "cta": "Unirse Prueba Beta"
+    },
+    "quantumComm": {
+      "title": "Red de Comunicación Quantum",
+      "description": "Comunicaciones encriptadas quantum imposibles de hackear con capacidades de transmisión global instantánea.",
+      "cta": "Ver Tech Quantum"
+    }
+  },
+  "caseStudies": {
+    "healthcare": {
+      "title": "Transformación Red Hospitalaria",
+      "description": "Sistema de gestión de pacientes impulsado por IA implementado reduciendo tiempos de espera en 60% y mejorando coordinación de atención en 15 instalaciones.",
+      "cta": "Experimentar Demo En Vivo"
+    },
+    "ecommerce": {
+      "title": "Revolución Digital Gigante Retail",
+      "description": "Plataforma de comercio electrónico personalizada con personalización IA incrementó tasas de conversión 250% e ingresos $50M anualmente.",
+      "cta": "Probar Personalización IA"
+    },
+    "finance": {
+      "title": "Revolución Seguridad Bancaria",
+      "description": "Sistema de detección de fraude impulsado por IA previene pérdidas potenciales de $100M+ manteniendo precisión del 99.9%.",
+      "cta": "Probar Detección Fraude"
+    }
+  },
+  "future": {
+    "quantumComputing": {
+      "title": "Computación Quantum",
+      "description": "Aprovecha la supremacía quantum para resolución de problemas complejos y poder computacional sin precedentes."
+    },
+    "neuralInterfaces": {
+      "title": "Interfaces Neurales",
+      "description": "Integración directa cerebro-computadora para colaboración y control humano-IA sin interrupciones."
+    },
+    "metaverseReady": {
+      "title": "Listo para Metaverso",
+      "description": "Entornos empresariales inmersivos con reuniones holográficas y espacios de trabajo AR."
+    },
+    "carbonNegative": {
+      "title": "Carbono Negativo",
+      "description": "Tecnología ambientalmente regenerativa que sana el planeta mientras avanza los negocios."
+    }
+  },
+  "footer": {
+    "tagline": "Tu negocio se convierte en nuestro negocio, y estamos a tu lado mientras navegas los picos y valles de tu jornada.",
+    "locations": "Ubicaciones:",
+    "locationsList": "Rockledge, Florida\nNassau, Las Bahamas\nSanto Domingo, R.D.",
+    "email": "Email: support@kleverr.io",
+    "newsletter": "Mantente actualizado con noticias, tendencias y perspectivas.",
+    "subscribe": "Suscribirse",
+    "enterEmail": "Ingresa tu email"
+  },
+  "ui": {
+    "scrollDown": "Desplázate hacia abajo para ver más",
+    "live": "En Vivo",
+    "beta": "Beta",
+    "preview": "Vista Previa", 
+    "interactive": "Interactivo",
+    "aiPowered": "Impulsado por IA",
+    "secure": "Seguro",
+    "arVr": "AR/VR",
+    "quantum": "Quantum",
+    "liveDemo": "Demo En Vivo"
+  }
+}

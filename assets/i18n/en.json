@@ -1,0 +1,123 @@
+{
+  "hero": {
+    "title": "Building A Smarter Working World.",
+    "description": "We Explore cutting-edge strategies and transformative technologies that redefine the way You work, fostering collaboration, sustainability, and adaptability.",
+    "cta": "Get Started"
+  },
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "insights": "Insights",
+    "contact": "Contact",
+    "consultation": "Get a Free Consultation"
+  },
+  "sections": {
+    "ourServices": "Our Services",
+    "businessSolutions": "Explore Our Business Solutions",
+    "aiAutomation": "AI Automation Mastery",
+    "aiDescription": "Experience the future of business automation with our cutting-edge AI tools and intelligent solutions.",
+    "livingPrototypes": "Living Prototypes",
+    "livingPrototypesDesc": "Experience our cutting-edge solutions in action. These aren't just demos—they're fully functional prototypes showcasing the future of business technology.",
+    "successStories": "Success Stories That Inspire",
+    "successStoriesDesc": "Discover how we've transformed businesses across industries with innovative technology solutions.",
+    "vision2035": "2035 Vision Lab",
+    "vision2035Desc": "Step into the future of technology. Experience tomorrow's solutions today with our quantum-powered preview of next-generation business tools."
+  },
+  "about": {
+    "title": "As the pace of change increases great organizations are the ones who explore new opportunities.",
+    "description": "We are architects of innovation, trailblazers of technological advancement, and partners in your success. As a dynamic and forward-thinking Team Of Strategist, we are dedicated to reshaping industries and empowering businesses to navigate the digital age with confidence."
+  },
+  "cta": {
+    "getStarted": "Get Started",
+    "explore": "Explore",
+    "startHere": "Start Here",
+    "getInTouch": "Get In Touch",
+    "learnMore": "Learn More",
+    "tryDemo": "Try Demo",
+    "launchDemo": "Launch Demo",
+    "experienceDemo": "Experience Demo"
+  },
+  "prototypes": {
+    "quantumAnalytics": {
+      "title": "Quantum Analytics Engine",
+      "description": "Real-time business intelligence powered by quantum computing algorithms. Process millions of data points instantly.",
+      "cta": "Launch Quantum Demo"
+    },
+    "neuralAutomation": {
+      "title": "Neural Workflow Automation", 
+      "description": "AI that learns your business processes and creates intelligent automation workflows without coding.",
+      "cta": "Try Neural AI"
+    },
+    "holoSecurity": {
+      "title": "Holographic Security Console",
+      "description": "3D visualization of your security infrastructure with predictive threat detection and quantum encryption.",
+      "cta": "Enter Security Hub"
+    },
+    "metaverseCollab": {
+      "title": "Metaverse Collaboration Space",
+      "description": "Immersive virtual meetings and collaboration in photorealistic 3D environments with haptic feedback.",
+      "cta": "Join Beta Test"
+    },
+    "quantumComm": {
+      "title": "Quantum Communication Network",
+      "description": "Unhackable quantum-encrypted communications with instantaneous global transmission capabilities.",
+      "cta": "Preview Quantum Tech"
+    }
+  },
+  "caseStudies": {
+    "healthcare": {
+      "title": "Hospital Network Transformation",
+      "description": "Implemented AI-powered patient management system reducing wait times by 60% and improving care coordination across 15 facilities.",
+      "cta": "Experience Live Demo"
+    },
+    "ecommerce": {
+      "title": "Retail Giant Digital Revolution", 
+      "description": "Custom e-commerce platform with AI personalization increased conversion rates by 250% and revenue by $50M annually.",
+      "cta": "Try AI Personalization"
+    },
+    "finance": {
+      "title": "Banking Security Revolution",
+      "description": "AI-powered fraud detection system preventing $100M+ in potential losses while maintaining 99.9% accuracy.",
+      "cta": "Test Fraud Detection"
+    }
+  },
+  "future": {
+    "quantumComputing": {
+      "title": "Quantum Computing",
+      "description": "Harness quantum supremacy for complex problem-solving and unprecedented computational power."
+    },
+    "neuralInterfaces": {
+      "title": "Neural Interfaces", 
+      "description": "Direct brain-computer integration for seamless human-AI collaboration and control."
+    },
+    "metaverseReady": {
+      "title": "Metaverse Ready",
+      "description": "Immersive business environments with holographic meetings and AR workspaces."
+    },
+    "carbonNegative": {
+      "title": "Carbon Negative",
+      "description": "Environmentally regenerative technology that heals the planet while advancing business."
+    }
+  },
+  "footer": {
+    "tagline": "Your business becomes our business, and we stand by your side as you navigate the peaks and troughs of your journey.",
+    "locations": "Locations:",
+    "locationsList": "Rockledge, Florida\nNassau, The Bahamas\nSanto Domingo, D.R.",
+    "email": "Email: support@kleverr.io",
+    "newsletter": "Stay up-to-date with news, trends & insights.",
+    "subscribe": "Subscribe",
+    "enterEmail": "Enter your email"
+  },
+  "ui": {
+    "scrollDown": "Scroll down to see more",
+    "live": "Live",
+    "beta": "Beta", 
+    "preview": "Preview",
+    "interactive": "Interactive",
+    "aiPowered": "AI Powered",
+    "secure": "Secure",
+    "arVr": "AR/VR",
+    "quantum": "Quantum",
+    "liveDemo": "Live Demo"
+  }
+}
