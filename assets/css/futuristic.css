@@ -414,7 +414,358 @@
   40% { transform: scale(1); }
 }
 
-/* 📱 Responsive Design */
+/* 🚀 Live Demo Integration Styles */
+
+/* Demo Badge Container */
+.demo-badge-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+/* Live Demo Badge */
+.demo-badge {
+  background: linear-gradient(135deg, var(--ai-green) 0%, var(--quantum-blue) 100%);
+  color: #000;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.4);
+  animation: demoPulse 2s ease-in-out infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+.demo-badge::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
+  transform: rotate(45deg);
+  animation: demoShimmer 3s infinite;
+}
+
+@keyframes demoPulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 20px rgba(0, 255, 136, 0.4); }
+  50% { transform: scale(1.05); box-shadow: 0 0 30px rgba(0, 255, 136, 0.7); }
+}
+
+@keyframes demoShimmer {
+  0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+  50% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+  100% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+}
+
+/* Demo Link Button */
+.demo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--ai-green);
+  padding: 12px 24px;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.demo-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 255, 136, 0.3);
+  border-color: var(--quantum-blue);
+}
+
+.demo-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s;
+}
+
+.demo-link:hover::before {
+  left: 100%;
+}
+
+/* Demo Pulse Effect */
+.demo-pulse {
+  width: 8px;
+  height: 8px;
+  background: var(--ai-green);
+  border-radius: 50%;
+  animation: statusPulse 1.5s infinite;
+  box-shadow: 0 0 10px var(--ai-green);
+}
+
+@keyframes statusPulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.5); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Living Prototypes Section */
+.living-prototypes {
+  position: relative;
+  background: linear-gradient(180deg, #1a1e3a 0%, #0a0e27 100%);
+}
+
+.living-prototypes .section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.prototypes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin: 50px 0;
+}
+
+/* Prototype Card Enhancements */
+.prototype-card {
+  position: relative;
+  background: linear-gradient(135deg, rgba(128, 0, 255, 0.1) 0%, rgba(0, 255, 255, 0.1) 100%);
+  border-radius: 15px;
+  padding: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 255, 136, 0.2);
+}
+
+.prototype-card:hover {
+  transform: translateY(-10px) rotateX(5deg);
+  box-shadow: 0 20px 40px rgba(0, 255, 136, 0.3);
+  border-color: var(--ai-green);
+}
+
+/* Prototype Status Indicator */
+.prototype-status-indicator {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 12px;
+  height: 12px;
+  background: var(--ai-green);
+  border-radius: 50%;
+  animation: statusPulse 1.5s infinite;
+  box-shadow: 0 0 15px var(--ai-green);
+}
+
+.prototype-status-indicator::after {
+  content: 'LIVE';
+  position: absolute;
+  top: -25px;
+  right: -15px;
+  font-size: 0.7rem;
+  color: var(--ai-green);
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.prototype-card:hover .prototype-status-indicator::after {
+  opacity: 1;
+}
+
+/* Prototype Metrics */
+.prototype-metrics {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+.prototype-metrics .success-metric {
+  background: rgba(0, 255, 136, 0.2);
+  color: var(--ai-green);
+  border: 1px solid rgba(0, 255, 136, 0.3);
+}
+
+/* Demo Action Buttons */
+.demo-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.demo-btn {
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  border: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.demo-btn.primary {
+  background: linear-gradient(135deg, var(--ai-green) 0%, var(--quantum-blue) 100%);
+  color: #000;
+  box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3);
+}
+
+.demo-btn.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 255, 136, 0.5);
+}
+
+.demo-btn.secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.demo-btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: var(--quantum-blue);
+}
+
+/* QR Code Integration */
+.prototype-qr {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  opacity: 0.7;
+}
+
+.prototype-qr:hover {
+  opacity: 1;
+  background: rgba(0, 255, 136, 0.2);
+  transform: scale(1.1);
+}
+
+.prototype-qr::after {
+  content: '📱';
+  font-size: 1.2rem;
+}
+
+/* Demo Preview Modal */
+.demo-preview {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  max-width: 800px;
+  height: 80vh;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  animation: modalSlideIn 0.3s ease;
+}
+
+.demo-preview iframe {
+  flex: 1;
+  border: none;
+  border-radius: 10px 10px 0 0;
+}
+
+.preview-actions {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(20px);
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.preview-actions a,
+.preview-actions button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.preview-actions a {
+  background: var(--primary-gradient);
+  color: white;
+}
+
+.preview-actions button {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@keyframes modalSlideIn {
+  from { opacity: 0; transform: translate(-50%, -60%); }
+  to { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+/* Enhanced Success Metrics for Demos */
+.demo-enhanced-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.demo-metric-item {
+  text-align: center;
+  padding: 15px 10px;
+  background: rgba(0, 255, 136, 0.1);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 255, 136, 0.3);
+  transition: all 0.3s ease;
+}
+
+.demo-metric-item:hover {
+  background: rgba(0, 255, 136, 0.2);
+  transform: translateY(-2px);
+}
+
+.demo-metric-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--ai-green);
+  display: block;
+}
+
+.demo-metric-label {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 5px;
+}
+
+/* 📱 Responsive Design Updates */
 @media (max-width: 768px) {
   .ai-grid {
     grid-template-columns: 1fr;
@@ -432,5 +783,28 @@
     top: auto;
     bottom: 20px;
     right: 20px;
+  }
+  
+  .prototypes-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .demo-actions {
+    flex-direction: column;
+  }
+  
+  .demo-btn {
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .demo-preview {
+    width: 95vw;
+    height: 90vh;
+  }
+  
+  .demo-badge-container {
+    justify-content: center;
   }
 }

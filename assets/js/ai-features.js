@@ -13,9 +13,12 @@ class KleverrAI {
     this.chatbotOpen = false;
     this.voiceSearchActive = false;
     this.darkMode = localStorage.getItem('darkMode') === 'true';
+    this.demoInteractions = JSON.parse(localStorage.getItem('demoInteractions')) || {};
     this.setupDarkMode();
     this.createChatbot();
     this.createQuantumParticles();
+    this.setupDemoTracking();
+    this.initializePrototypeInteractions();
   }
 
   // 🎙️ Voice Search Implementation
@@ -451,6 +454,249 @@ class KleverrAI {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+  }
+
+  // 🎯 Demo Tracking & Analytics
+  setupDemoTracking() {
+    // Track all demo link clicks
+    document.addEventListener('click', (e) => {
+      const demoLink = e.target.closest('.demo-link');
+      if (demoLink) {
+        const demoType = demoLink.getAttribute('data-demo');
+        this.trackDemoClick(demoType, demoLink.href);
+      }
+    });
+
+    // Track prototype card interactions
+    document.addEventListener('mouseenter', (e) => {
+      const prototypeCard = e.target.closest('.prototype-card');
+      if (prototypeCard) {
+        this.trackCardInteraction(prototypeCard);
+      }
+    }, true);
+  }
+
+  trackDemoClick(demoType, url) {
+    const timestamp = Date.now();
+    if (!this.demoInteractions[demoType]) {
+      this.demoInteractions[demoType] = {
+        clicks: 0,
+        lastClicked: null,
+        firstClicked: timestamp
+      };
+    }
+
+    this.demoInteractions[demoType].clicks++;
+    this.demoInteractions[demoType].lastClicked = timestamp;
+    
+    // Store in localStorage
+    localStorage.setItem('demoInteractions', JSON.stringify(this.demoInteractions));
+    
+    // Send analytics (mock implementation)
+    this.sendDemoAnalytics(demoType, url);
+    
+    // Show tracking notification
+    this.showNotification(`🚀 Launching ${this.getDemoDisplayName(demoType)}...`);
+  }
+
+  trackCardInteraction(card) {
+    // Add hover effects and interaction tracking
+    const demoType = card.querySelector('.demo-link')?.getAttribute('data-demo');
+    if (demoType && !card.classList.contains('interaction-tracked')) {
+      card.classList.add('interaction-tracked');
+      
+      // Add pulse animation to demo button
+      const demoLink = card.querySelector('.demo-link');
+      if (demoLink) {
+        demoLink.style.animation = 'pulse 2s infinite';
+      }
+    }
+  }
+
+  sendDemoAnalytics(demoType, url) {
+    // Mock analytics - replace with actual analytics service
+    const analyticsData = {
+      event: 'demo_click',
+      demo_type: demoType,
+      url: url,
+      timestamp: new Date().toISOString(),
+      user_agent: navigator.userAgent,
+      session_id: this.getSessionId()
+    };
+    
+    console.log('📊 Demo Analytics:', analyticsData);
+    
+    // In production, send to analytics service:
+    // fetch('/api/analytics', { method: 'POST', body: JSON.stringify(analyticsData) });
+  }
+
+  getSessionId() {
+    let sessionId = sessionStorage.getItem('kleverr_session');
+    if (!sessionId) {
+      sessionId = 'kleverr_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+      sessionStorage.setItem('kleverr_session', sessionId);
+    }
+    return sessionId;
+  }
+
+  getDemoDisplayName(demoType) {
+    const displayNames = {
+      'quantum-analytics': 'Quantum Analytics Engine',
+      'neural-automation': 'Neural Workflow Automation',
+      'holo-security': 'Holographic Security Console',
+      'metaverse-collab': 'Metaverse Collaboration Space',
+      'quantum-comm': 'Quantum Communication Network',
+      'healthcare-system': 'Healthcare Management System',
+      'ai-ecommerce': 'AI-Powered E-Commerce Platform',
+      'fraud-detection': 'Fraud Detection System'
+    };
+    return displayNames[demoType] || 'Demo';
+  }
+
+  // 🎮 Prototype Interactions
+  initializePrototypeInteractions() {
+    // Enhanced prototype card animations
+    const observerOptions = {
+      threshold: 0.2,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const prototypesObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add('animate-in');
+            this.animatePrototypeMetrics(entry.target);
+          }, index * 100);
+        }
+      });
+    }, observerOptions);
+
+    // Observe prototype cards when they exist
+    setTimeout(() => {
+      document.querySelectorAll('.prototype-card').forEach(card => {
+        prototypesObserver.observe(card);
+      });
+    }, 1000);
+
+    // Add interactive hover effects
+    this.enhancePrototypeCards();
+  }
+
+  enhancePrototypeCards() {
+    document.addEventListener('mouseover', (e) => {
+      const card = e.target.closest('.prototype-card');
+      if (card) {
+        // Add glowing effect
+        card.style.boxShadow = '0 0 30px rgba(128, 0, 255, 0.5)';
+        
+        // Animate metrics
+        const metrics = card.querySelectorAll('.metric-value');
+        metrics.forEach(metric => {
+          metric.style.transform = 'scale(1.1)';
+          metric.style.transition = 'transform 0.3s ease';
+        });
+      }
+    });
+
+    document.addEventListener('mouseout', (e) => {
+      const card = e.target.closest('.prototype-card');
+      if (card) {
+        // Remove glowing effect
+        card.style.boxShadow = '';
+        
+        // Reset metrics
+        const metrics = card.querySelectorAll('.metric-value');
+        metrics.forEach(metric => {
+          metric.style.transform = 'scale(1)';
+        });
+      }
+    });
+  }
+
+  animatePrototypeMetrics(card) {
+    const metricValues = card.querySelectorAll('.metric-value');
+    metricValues.forEach((metric, index) => {
+      setTimeout(() => {
+        const finalValue = metric.textContent;
+        let currentValue = 0;
+        
+        // Special handling for different metric types
+        if (finalValue.includes('%')) {
+          const targetPercent = parseInt(finalValue);
+          const increment = targetPercent / 20;
+          const counter = setInterval(() => {
+            currentValue += increment;
+            if (currentValue >= targetPercent) {
+              metric.textContent = finalValue;
+              clearInterval(counter);
+            } else {
+              metric.textContent = Math.floor(currentValue) + '%';
+            }
+          }, 50);
+        } else if (finalValue.includes('M') || finalValue.includes('k')) {
+          // Handle large numbers with suffixes
+          metric.style.opacity = '0';
+          setTimeout(() => {
+            metric.style.opacity = '1';
+            metric.style.transform = 'scale(1.2)';
+            setTimeout(() => {
+              metric.style.transform = 'scale(1)';
+            }, 200);
+          }, 100);
+        } else if (finalValue === '∞' || finalValue === '0ms') {
+          // Special values - just animate in
+          metric.style.opacity = '0';
+          metric.style.transform = 'rotate(360deg) scale(0)';
+          setTimeout(() => {
+            metric.style.opacity = '1';
+            metric.style.transform = 'rotate(0deg) scale(1)';
+            metric.style.transition = 'all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+          }, 200);
+        }
+      }, index * 200);
+    });
+  }
+
+  // 📊 Demo Statistics Dashboard
+  getDemoStats() {
+    const stats = {
+      totalClicks: 0,
+      mostPopularDemo: null,
+      recentActivity: [],
+      uniqueDemos: Object.keys(this.demoInteractions).length
+    };
+
+    let maxClicks = 0;
+    
+    Object.entries(this.demoInteractions).forEach(([demo, data]) => {
+      stats.totalClicks += data.clicks;
+      if (data.clicks > maxClicks) {
+        maxClicks = data.clicks;
+        stats.mostPopularDemo = demo;
+      }
+      
+      stats.recentActivity.push({
+        demo: demo,
+        clicks: data.clicks,
+        lastClicked: new Date(data.lastClicked).toLocaleString()
+      });
+    });
+
+    return stats;
+  }
+
+  // Console command for viewing demo stats
+  showDemoStats() {
+    const stats = this.getDemoStats();
+    console.log('🚀 Kleverr Demo Statistics:');
+    console.log(`Total Demo Clicks: ${stats.totalClicks}`);
+    console.log(`Most Popular Demo: ${this.getDemoDisplayName(stats.mostPopularDemo)}`);
+    console.log(`Unique Demos Accessed: ${stats.uniqueDemos}`);
+    console.table(stats.recentActivity);
+    
+    this.showNotification(`📊 ${stats.totalClicks} total demo interactions tracked!`);
+    return stats;
   }
 
   // Animation helpers
