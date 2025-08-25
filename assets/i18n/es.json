@@ -25,7 +25,7 @@
   },
   "about": {
     "title": "A medida que el ritmo de cambio aumenta, las grandes organizaciones son las que exploran nuevas oportunidades.",
-    "description": "Somos arquitectos de la innovación, pioneros del avance tecnológico y socios en tu éxito. Como un Equipo de Estrategas dinámico y visionario, estamos dedicados a remodelar industrias y empoderar empresas para navegar la era digital con confianza."
+    "description": "Somos arquitectos de la innovación, pioneros del avance tecnológico y socios en tu éxito. Como un equipo de estrategas dinámico y visionario, estamos dedicados a remodelar industrias y empoderar empresas para navegar la era digital con confianza."
   },
   "cta": {
     "getStarted": "Comenzar",
@@ -110,14 +110,14 @@
   },
   "ui": {
     "scrollDown": "Desplázate hacia abajo para ver más",
-    "live": "En Vivo",
-    "beta": "Beta",
-    "preview": "Vista Previa", 
+    "live": "EN VIVO",
+    "beta": "BETA",
+    "preview": "VISTA PREVIA", 
     "interactive": "Interactivo",
     "aiPowered": "Impulsado por IA",
     "secure": "Seguro",
     "arVr": "AR/VR",
     "quantum": "Quantum",
-    "liveDemo": "Demo En Vivo"
+    "liveDemo": "EN VIVO"
   }
 }

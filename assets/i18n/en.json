@@ -25,7 +25,7 @@
   },
   "about": {
     "title": "As the pace of change increases great organizations are the ones who explore new opportunities.",
-    "description": "We are architects of innovation, trailblazers of technological advancement, and partners in your success. As a dynamic and forward-thinking Team Of Strategist, we are dedicated to reshaping industries and empowering businesses to navigate the digital age with confidence."
+    "description": "We are architects of innovation, trailblazers of technological advancement, and partners in your success. As a dynamic and forward-thinking team of strategists, we are dedicated to reshaping industries and empowering businesses to navigate the digital age with confidence."
   },
   "cta": {
     "getStarted": "Get Started",
@@ -110,14 +110,14 @@
   },
   "ui": {
     "scrollDown": "Scroll down to see more",
-    "live": "Live",
-    "beta": "Beta", 
-    "preview": "Preview",
+    "live": "LIVE",
+    "beta": "BETA", 
+    "preview": "PREVIEW",
     "interactive": "Interactive",
     "aiPowered": "AI Powered",
     "secure": "Secure",
     "arVr": "AR/VR",
     "quantum": "Quantum",
-    "liveDemo": "Live Demo"
+    "liveDemo": "LIVE"
   }
 }

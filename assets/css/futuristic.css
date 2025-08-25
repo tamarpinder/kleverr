@@ -253,7 +253,7 @@
   100% { box-shadow: 0 0 0 0 rgba(0, 255, 136, 0); }
 }
 
-/* 🌐 Neural Network Animation */
+/* Neural Network Animation */
 .neural-network {
   position: absolute;
   width: 100%;
@@ -809,7 +809,7 @@
   }
 }
 
-/* 🌐 LANGUAGE TOGGLE STYLES */
+/* LANGUAGE TOGGLE STYLES */
 .language-toggle-container {
   position: relative;
   margin-right: 15px;
@@ -948,4 +948,60 @@
     font-size: 13px;
     padding: 6px 12px;
   }
+}
+
+/* PROFESSIONAL TEXT FORMATTING OVERRIDES */
+
+/* Fix auto-capitalization for paragraph content */
+.text-block-34,
+.text-block-37,
+.text-block-41,
+.text-block-45 {
+  text-transform: none !important;
+}
+
+/* Fix auto-capitalization for description texts */
+[data-i18n="hero.description"],
+[data-i18n="sections.aiDescription"],
+[data-i18n="sections.livingPrototypesDesc"],
+[data-i18n="sections.successStoriesDesc"],
+[data-i18n="sections.vision2035Desc"],
+[data-i18n="about.description"] {
+  text-transform: none !important;
+}
+
+/* Fix auto-capitalization for prototype and case study descriptions */
+[data-i18n*=".description"],
+.case-card p,
+.prototype-card p,
+.ai-tool-card p,
+.testimonial-card p {
+  text-transform: none !important;
+}
+
+/* Ensure proper sentence case for all paragraph content */
+p, 
+.description,
+.challenge,
+.solution,
+div[class*="text-block"]:not(.heading):not(.title) {
+  text-transform: none !important;
+}
+
+/* Preserve title capitalization where appropriate */
+.heading-19,
+.heading-20, 
+.heading-21,
+.heading-22,
+.heading-23,
+.heading-24,
+.neon-text,
+h1, h2, h3, h4, h5, h6 {
+  text-transform: initial;
+}
+
+/* Navigation should remain clean */
+.nav-link-2,
+.footer-link-two {
+  text-transform: none !important;
 }

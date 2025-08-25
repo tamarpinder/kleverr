@@ -1,4 +1,4 @@
-// 🤖 AI Features JavaScript - Kleverr 2035
+// AI Features JavaScript - Kleverr 2035
 // Interactive AI demos, voice search, chatbot, and futuristic interactions
 
 class KleverrAI {
@@ -21,7 +21,7 @@ class KleverrAI {
     this.initializePrototypeInteractions();
   }
 
-  // 🎙️ Voice Search Implementation
+  // Voice Search Implementation
   setupVoiceSearch() {
     if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
       console.log('Voice search not supported');
@@ -79,7 +79,7 @@ class KleverrAI {
     }
   }
 
-  // 💬 AI Chatbot
+  // AI Chatbot
   createChatbot() {
     const chatbotHTML = `
       <div class="ai-chat-bubble" id="aiChatBubble">
@@ -101,7 +101,7 @@ class KleverrAI {
     document.body.insertAdjacentHTML('beforeend', chatbotHTML);
   }
 
-  // 🎯 AI Response Generator (Mock - Replace with actual API)
+  // AI Response Generator (Mock - Replace with actual API)
   async generateAIResponse(query) {
     // Mock AI responses - Replace with OpenAI API call
     const responses = {
@@ -237,7 +237,7 @@ class KleverrAI {
     this.animateSecurityScan();
   }
 
-  // 📊 ROI Calculator
+  // ROI Calculator
   setupROICalculator() {
     const calculator = document.getElementById('roiCalculator');
     if (!calculator) return;
@@ -382,7 +382,7 @@ class KleverrAI {
     });
   }
 
-  // 🚀 Start Animations
+  // Start Animations
   startAnimations() {
     // Load AI tools when section is visible
     const aiSection = document.querySelector('#ai-automation');
@@ -496,7 +496,7 @@ class KleverrAI {
     this.sendDemoAnalytics(demoType, url);
     
     // Show tracking notification
-    this.showNotification(`🚀 Launching ${this.getDemoDisplayName(demoType)}...`);
+    this.showNotification(`Launching ${this.getDemoDisplayName(demoType)}...`);
   }
 
   trackCardInteraction(card) {
@@ -524,7 +524,7 @@ class KleverrAI {
       session_id: this.getSessionId()
     };
     
-    console.log('📊 Demo Analytics:', analyticsData);
+    console.log('Demo Analytics:', analyticsData);
     
     // In production, send to analytics service:
     // fetch('/api/analytics', { method: 'POST', body: JSON.stringify(analyticsData) });
@@ -658,7 +658,7 @@ class KleverrAI {
     });
   }
 
-  // 📊 Demo Statistics Dashboard
+  // Demo Statistics Dashboard
   getDemoStats() {
     const stats = {
       totalClicks: 0,
@@ -689,13 +689,13 @@ class KleverrAI {
   // Console command for viewing demo stats
   showDemoStats() {
     const stats = this.getDemoStats();
-    console.log('🚀 Kleverr Demo Statistics:');
+    console.log('Kleverr Demo Statistics:');
     console.log(`Total Demo Clicks: ${stats.totalClicks}`);
     console.log(`Most Popular Demo: ${this.getDemoDisplayName(stats.mostPopularDemo)}`);
     console.log(`Unique Demos Accessed: ${stats.uniqueDemos}`);
     console.table(stats.recentActivity);
     
-    this.showNotification(`📊 ${stats.totalClicks} total demo interactions tracked!`);
+    this.showNotification(`${stats.totalClicks} total demo interactions tracked!`);
     return stats;
   }
 
@@ -720,7 +720,7 @@ class KleverrAI {
 
   createQuantumVisualization() {
     // Create quantum computing visualization
-    this.showNotification('⚛️ Quantum state: Superposition achieved');
+    this.showNotification('Quantum state: Superposition achieved');
   }
 
   animateSecurityScan() {

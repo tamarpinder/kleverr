@@ -1,4 +1,4 @@
-// 🌐 Multilingual Support - Kleverr 2035
+// Multilingual Support - Kleverr 2035
 // AI-Assisted Translation System for Dominican Republic and Global Markets
 
 class KleverrMultilingual {
@@ -16,7 +16,7 @@ class KleverrMultilingual {
       const browserLang = navigator.language || navigator.userLanguage;
       let detectedLang = browserLang.toLowerCase().startsWith('es') ? 'es' : 'en';
       
-      console.log('🌐 Browser language detected:', browserLang, '→', detectedLang);
+      console.log('Browser language detected:', browserLang, '→', detectedLang);
 
       // Secondary: IP Geolocation for Dominican Republic
       if (detectedLang === 'en') {
@@ -29,7 +29,7 @@ class KleverrMultilingual {
           // Prioritize Dominican Republic and Spanish-speaking countries
           if (['DO', 'ES', 'MX', 'AR', 'CO', 'PE', 'VE', 'CL', 'EC', 'GT', 'CU', 'BO', 'HN', 'PY', 'SV', 'NI', 'CR', 'PA', 'UY'].includes(data.country_code)) {
             detectedLang = 'es';
-            console.log('🇩🇴 Spanish-speaking region detected, switching to Spanish');
+            console.log('Spanish-speaking region detected, switching to Spanish');
           }
         } catch (geoError) {
           console.log('📍 Geolocation detection failed, using browser language fallback');
@@ -233,7 +233,7 @@ class KleverrMultilingual {
     notification.className = 'ai-translation-notification';
     notification.innerHTML = `
       <div class="ai-badge">
-        🤖 AI-Assisted Translation
+        AI-Assisted Translation
       </div>
       <div class="translation-message">
         ${this.currentLanguage === 'es' ? 'Traducción optimizada para República Dominicana' : 'Translation optimized for Dominican Republic'}
@@ -268,7 +268,7 @@ class KleverrMultilingual {
 
   // 🚀 Initialize Everything
   async init() {
-    console.log('🌐 Initializing Kleverr Multilingual System...');
+    console.log('Initializing Kleverr Multilingual System...');
     
     try {
       // Load translations first
@@ -337,5 +337,5 @@ async function initializeMultilingual() {
   window.kleverrMultilingual = new KleverrMultilingual();
   await window.kleverrMultilingual.init();
   
-  console.log('🌐 Multilingual system ready. Use kleverrMultilingual.changeLanguage("es") to switch languages.');
+  console.log('Multilingual system ready. Use kleverrMultilingual.changeLanguage("es") to switch languages.');
 }
