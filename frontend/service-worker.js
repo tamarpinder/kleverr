@@ -1,9 +1,9 @@
 // 🚀 Kleverr Service Worker - 2035 Edition
 // Offline functionality, caching, and PWA features
 
-const CACHE_NAME = 'kleverr-v2.0.0';
-const STATIC_CACHE = 'kleverr-static-v2';
-const DYNAMIC_CACHE = 'kleverr-dynamic-v2';
+const CACHE_NAME = 'kleverr-v3.0.0';
+const STATIC_CACHE = 'kleverr-static-v3';
+const DYNAMIC_CACHE = 'kleverr-dynamic-v3';
 
 // Files to cache for offline functionality
 const STATIC_FILES = [
