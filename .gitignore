@@ -60,3 +60,23 @@ pids
 # Temporary folders
 tmp/
 temp/
+
+# Documentation and PDFs (exclude from repo)
+*.pdf
+*.md
+!frontend/README.md
+
+# Exclude root-level files - only push frontend folder
+/(2025) Kleverr Company-Booklet.pdf
+/ARCHITECTURE.md
+/CLAUDE.md
+/DEV_PLAN.md
+/REPO.md
+/Role.md
+/SERVICES_CONTENT.md
+/Start Process.md
+/Animated Gradient Background.md
+
+# Old HTML files
+about-old.html
+*-old.html
