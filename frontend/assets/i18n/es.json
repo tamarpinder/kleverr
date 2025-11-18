@@ -208,5 +208,64 @@
       "title": "Creación de Contenido Mejorada con IA",
       "description": "Genera, optimiza y personaliza contenido a escala. Reduce el tiempo de creación de contenido en un 70%."
     }
+  },
+  "aboutPage": {
+    "hero": {
+      "badge": "acerca de nosotros",
+      "title": "Transformando Vidas y Organizaciones."
+    },
+    "mission": {
+      "heading": "Reconocemos que comprender a tu gente es la clave para tomar decisiones efectivas e impactantes.",
+      "paragraph1": "En Kleverr, empoderamos empresas en las industrias de salud y turismo para desbloquear su máximo potencial de crecimiento. Al combinar sin problemas tecnologías digitales, mejores prácticas de marketing e insights basados en datos, entregamos resultados incomparables para nuestros clientes.",
+      "paragraph2": "Creemos en crear asociaciones duraderas construidas sobre confianza, innovación y éxito medible. Nuestro equipo de expertos trabaja incansablemente para asegurar que tu negocio se mantenga a la vanguardia en un panorama digital en constante evolución.",
+      "contactCta": "Contáctanos"
+    },
+    "whatWeDo": {
+      "heading": "Qué hacemos",
+      "description": "En Kleverr, empoderamos empresas en las industrias de salud y turismo para desbloquear su máximo potencial de crecimiento. Al combinar sin problemas tecnologías digitales, mejores prácticas de marketing e insights basados en datos, entregamos resultados incomparables para nuestros clientes.",
+      "services": {
+        "digitalTransformation": "Estrategia de Transformación Digital",
+        "businessPlanning": "Planificación de Sistemas Empresariales",
+        "digitalMarketing": "Marketing Digital e Inbound",
+        "ecommerce": "Comercio Electrónico",
+        "webMobile": "Experiencias Web y Móvil",
+        "appDevelopment": "Desarrollo de Aplicaciones"
+      },
+      "viewAllCta": "Ver todos los servicios"
+    },
+    "values": {
+      "heading": "Nuestros valores",
+      "teamwork": {
+        "title": "Trabajo en Equipo",
+        "description": "La colaboración está en el corazón de todo lo que hacemos. Creemos que las mejores soluciones surgen cuando perspectivas diversas se unen con un propósito compartido."
+      },
+      "growth": {
+        "title": "Crecimiento",
+        "description": "Estamos comprometidos con la mejora continua y el aprendizaje. Tu crecimiento es nuestro crecimiento, e invertimos en ambos para asegurar un éxito duradero."
+      },
+      "fun": {
+        "title": "Diversión",
+        "description": "La innovación prospera en entornos positivos. Aportamos entusiasmo y creatividad a cada proyecto, haciendo que el viaje sea tan gratificante como el destino."
+      },
+      "innovation": {
+        "title": "Innovación",
+        "description": "Empujamos límites y desafiamos convenciones. Al mantenernos a la vanguardia de las tendencias tecnológicas, entregamos soluciones de última generación que te dan una ventaja competitiva."
+      },
+      "ambition": {
+        "title": "Ambición",
+        "description": "Establecemos metas audaces y las perseguimos sin descanso. Tu visión ambiciosa merece socios que compartan tu impulso por la excelencia y resultados transformacionales."
+      },
+      "care": {
+        "title": "Nos Importa",
+        "description": "Tu éxito nos importa personalmente. Nos involucramos en tu negocio, tratando cada desafío como propio y celebrando cada victoria juntos."
+      }
+    },
+    "blog": {
+      "badge": "DESDE EL BLOG",
+      "heading": "Informados e inspirados",
+      "from": "Desde",
+      "readArticle": "Leer artículo",
+      "viewAllCta": "Ver todos los artículos del blog"
+    }
   }
 }

@@ -222,5 +222,64 @@
       "title": "Banking Security Revolution",
       "description": "AI-powered fraud detection preventing $100M+ in losses with 99.9% accuracy."
     }
+  },
+  "aboutPage": {
+    "hero": {
+      "badge": "about us",
+      "title": "Transforming Lives & Organisations."
+    },
+    "mission": {
+      "heading": "We recognize that understanding your people is the key to making effective and impactful decisions.",
+      "paragraph1": "At Kleverr, we empower businesses in the health and tourism industries to unlock their full growth potential. By seamlessly combining digital technologies, marketing best practices, and data-driven insights, we deliver unparalleled results for our clients.",
+      "paragraph2": "We believe in creating lasting partnerships built on trust, innovation, and measurable success. Our team of experts works tirelessly to ensure your business stays ahead of the curve in an ever-evolving digital landscape.",
+      "contactCta": "Contact Us"
+    },
+    "whatWeDo": {
+      "heading": "What we do",
+      "description": "At Kleverr, we empower businesses in the health and tourism industries to unlock their full growth potential. By seamlessly combining digital technologies, marketing best practices, and data-driven insights, we deliver unparalleled results for our clients.",
+      "services": {
+        "digitalTransformation": "Digital Transformation Strategy",
+        "businessPlanning": "Business System Planning",
+        "digitalMarketing": "Digital & Inbound Marketing",
+        "ecommerce": "E-Commerce",
+        "webMobile": "Web & Mobile Experiences",
+        "appDevelopment": "Application Development"
+      },
+      "viewAllCta": "View all services"
+    },
+    "values": {
+      "heading": "Our values",
+      "teamwork": {
+        "title": "Teamwork",
+        "description": "Collaboration is at the heart of everything we do. We believe that the best solutions emerge when diverse perspectives come together with a shared purpose."
+      },
+      "growth": {
+        "title": "Growth",
+        "description": "We're committed to continuous improvement and learning. Your growth is our growth, and we invest in both to ensure lasting success."
+      },
+      "fun": {
+        "title": "Having fun",
+        "description": "Innovation thrives in positive environments. We bring enthusiasm and creativity to every project, making the journey as rewarding as the destination."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "We push boundaries and challenge conventions. By staying ahead of technology trends, we deliver cutting-edge solutions that give you a competitive advantage."
+      },
+      "ambition": {
+        "title": "Ambition",
+        "description": "We set bold goals and pursue them relentlessly. Your ambitious vision deserves partners who share your drive for excellence and transformational results."
+      },
+      "care": {
+        "title": "We care",
+        "description": "Your success matters to us personally. We invest ourselves in your business, treating every challenge as our own and celebrating every victory together."
+      }
+    },
+    "blog": {
+      "badge": "FROM THE BLOG",
+      "heading": "Informed and inspired",
+      "from": "From",
+      "readArticle": "Read article",
+      "viewAllCta": "See all blog articles"
+    }
   }
 }

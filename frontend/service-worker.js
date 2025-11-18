@@ -1,9 +1,9 @@
 // 🚀 Kleverr Service Worker - 2035 Edition
 // Offline functionality, caching, and PWA features
 
-const CACHE_NAME = 'kleverr-v3.0.0';
-const STATIC_CACHE = 'kleverr-static-v3';
-const DYNAMIC_CACHE = 'kleverr-dynamic-v3';
+const CACHE_NAME = 'kleverr-v3.1.0';
+const STATIC_CACHE = 'kleverr-static-v3.1';
+const DYNAMIC_CACHE = 'kleverr-dynamic-v3.1';
 
 // Files to cache for offline functionality
 const STATIC_FILES = [
@@ -69,12 +69,40 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   const { request } = event;
   const url = new URL(request.url);
-  
+
   // Skip non-GET requests and external domains
   if (request.method !== 'GET' || !url.origin.includes('kleverr.io') && !url.origin.includes('localhost')) {
     return;
   }
-  
+
+  // Network-first strategy for HTML pages (always get latest version)
+  if (request.destination === 'document' || url.pathname.endsWith('.html') || url.pathname === '/' || url.pathname.match(/^\/(about|services|contact|insights|consultation)$/)) {
+    event.respondWith(
+      fetch(request)
+        .then((response) => {
+          // Cache the new version
+          if (response && response.status === 200) {
+            const responseToCache = response.clone();
+            caches.open(DYNAMIC_CACHE)
+              .then((cache) => {
+                console.log('[Service Worker] Caching updated HTML:', request.url);
+                cache.put(request, responseToCache);
+              });
+          }
+          return response;
+        })
+        .catch(() => {
+          // Fallback to cache if offline
+          console.log('[Service Worker] Network failed, serving from cache:', request.url);
+          return caches.match(request).then((cachedResponse) => {
+            return cachedResponse || caches.match('/offline.html');
+          });
+        })
+    );
+    return;
+  }
+
+  // Cache-first strategy for static assets (CSS, JS, images)
   event.respondWith(
     caches.match(request)
       .then((cachedResponse) => {
@@ -83,7 +111,7 @@ self.addEventListener('fetch', (event) => {
           console.log('[Service Worker] Serving from cache:', request.url);
           return cachedResponse;
         }
-        
+
         // Fetch from network and cache dynamically
         return fetch(request)
           .then((response) => {
@@ -91,25 +119,20 @@ self.addEventListener('fetch', (event) => {
             if (!response || response.status !== 200 || response.type !== 'basic') {
               return response;
             }
-            
+
             // Clone response for caching
             const responseToCache = response.clone();
-            
+
             // Cache dynamic content
             caches.open(DYNAMIC_CACHE)
               .then((cache) => {
                 console.log('[Service Worker] Caching dynamic:', request.url);
                 cache.put(request, responseToCache);
               });
-            
+
             return response;
           })
           .catch(() => {
-            // Serve offline page for HTML requests
-            if (request.destination === 'document') {
-              return caches.match('/offline.html');
-            }
-            
             // Serve placeholder for images
             if (request.destination === 'image') {
               return new Response('<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><rect width="200" height="200" fill="#f0f0f0"/><text x="100" y="100" text-anchor="middle" fill="#999">Image Offline</text></svg>', {
