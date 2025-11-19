@@ -160,6 +160,8 @@ div.navbar-no-shadow,
 .services-wizard-container {
   padding: 40px 20px;
   animation: fadeInUp 0.6s ease;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 .wizard-title {
@@ -286,6 +288,8 @@ div.navbar-no-shadow,
 .services-grid-container {
   padding: 40px 20px;
   animation: fadeInUp 0.6s ease;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 .services-header {
@@ -334,6 +338,7 @@ div.navbar-no-shadow,
   flex-wrap: wrap;
   margin-bottom: 30px;
   justify-content: center;
+  position: relative;
 }
 
 .category-btn {
@@ -458,6 +463,8 @@ div.navbar-no-shadow,
   color: #2B1343;
   margin-bottom: 12px;
   line-height: 1.3;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .service-desc-bento {
@@ -465,6 +472,8 @@ div.navbar-no-shadow,
   color: #666;
   line-height: 1.6;
   margin-bottom: 16px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .service-cta-bento {
@@ -612,12 +621,16 @@ div.navbar-no-shadow,
   font-weight: 700;
   color: #2B1343;
   margin-bottom: 12px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .modal-tagline {
   font-size: 16px;
   color: #666;
   margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .modal-tabs {
@@ -724,6 +737,8 @@ div.navbar-no-shadow,
   color: #444;
   line-height: 1.6;
   margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .modal-metrics {
@@ -898,12 +913,105 @@ div.navbar-no-shadow,
    ========================================== */
 
 @media (max-width: 768px) {
+  /* Global overflow prevention */
+  body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  /* Prevent overflow on parent containers */
+  .section-27 {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  .grid-container {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  .div-block-102 {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  /* Wizard */
   .wizard-options {
     grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .wizard-title {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .wizard-subtitle {
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+
+  .services-wizard-container {
+    padding: 30px 20px;
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  .wizard-option {
+    padding: 20px 18px;
+    border-radius: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .wizard-icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 14px;
+    border-radius: 14px;
+  }
+
+  .wizard-icon i {
+    width: 28px;
+    height: 28px;
+  }
+
+  .wizard-option-title {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
+  .wizard-option-desc {
+    font-size: 13px;
+  }
+
+  .browse-all-link {
+    padding: 14px 30px;
+    font-size: 14px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Services Grid - Strict Margins */
+  .services-grid-container {
+    padding: 30px 20px;
+    overflow-x: hidden;
+    max-width: 100%;
   }
 
   .services-bento-grid {
     grid-template-columns: 1fr;
+    gap: 12px;
+    max-width: 100%;
+  }
+
+  .service-card-bento {
+    padding: 16px;
+    border-radius: 14px;
+    min-height: auto;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .service-card-bento.featured,
@@ -912,44 +1020,244 @@ div.navbar-no-shadow,
     grid-row: span 1;
   }
 
-  .modal-content {
-    width: 95%;
-    padding: 30px 20px;
-    max-height: 95vh;
+  /* Service Cards - Mobile Optimized */
+  .service-name-bento {
+    font-size: 15px;
+    margin-bottom: 6px;
+    line-height: 1.25;
   }
 
-  .modal-title {
-    font-size: 24px;
+  .service-desc-bento {
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
-  .wizard-title {
-    font-size: 24px;
+  .service-icon-bento {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 12px;
+    border-radius: 10px;
   }
 
+  .service-icon-bento i {
+    width: 20px;
+    height: 20px;
+  }
+
+  .service-cta-bento {
+    font-size: 12px;
+    margin-top: 6px;
+    padding: 0;
+  }
+
+  /* Recommendation badge - mobile */
+  .recommended-badge {
+    padding: 6px 8px;
+    font-size: 10px;
+    margin-top: 8px;
+    align-items: center;
+    gap: 4px;
+    border-left-width: 2px;
+    border-radius: 4px;
+  }
+
+  .recommended-badge span {
+    display: none;
+  }
+
+  .recommended-badge::after {
+    content: 'Recommended';
+    color: #6B46C1;
+    font-weight: 600;
+  }
+
+  .recommended-badge i {
+    width: 11px;
+    height: 11px;
+    flex-shrink: 0;
+  }
+
+  /* AI Badge */
+  .ai-badge-bento {
+    padding: 4px 8px;
+    font-size: 9px;
+    top: 12px;
+    right: 12px;
+    letter-spacing: 0.5px;
+  }
+
+  /* Header */
+  .services-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 16px;
+    max-width: 100%;
+  }
+
+  .services-grid-title {
+    font-size: 20px;
+  }
+
+  .back-to-wizard {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .back-to-wizard i {
+    width: 14px;
+    height: 14px;
+  }
+
+  /* Category Filter - Horizontal Scroll Within Margins */
   .category-filter {
     justify-content: flex-start;
     overflow-x: auto;
+    overflow-y: hidden;
     flex-wrap: nowrap;
     padding-bottom: 10px;
+    margin-bottom: 16px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 8px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .category-filter::-webkit-scrollbar {
+    display: none;
+  }
+
+  .category-filter::after {
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 10px;
+    width: 40px;
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.95));
+    pointer-events: none;
   }
 
   .category-btn {
     flex-shrink: 0;
+    padding: 8px 16px;
+    font-size: 12px;
+    white-space: nowrap;
   }
 
-  .services-header {
-    flex-direction: column;
-    align-items: flex-start;
+  /* Modal - Strict Margins */
+  .modal-content {
+    width: calc(100% - 40px);
+    max-width: 600px;
+    padding: 24px 20px;
+    max-height: 85vh;
+    border-radius: 20px;
+    margin: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .modal-title {
+    font-size: 22px;
+  }
+
+  .modal-tagline {
+    font-size: 14px;
+  }
+
+  .modal-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 16px;
+  }
+
+  .modal-icon i {
+    width: 32px;
+    height: 32px;
+  }
+
+  .modal-description {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .modal-section-title {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .modal-list li,
+  .modal-benefits-list li {
+    font-size: 14px;
+    padding: 10px 0 10px 28px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   .modal-metrics {
     grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .metric-value {
+    font-size: 28px;
+  }
+
+  .modal-tabs {
+    overflow-x: auto;
+    gap: 4px;
+    scrollbar-width: none;
+    max-width: 100%;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .modal-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .modal-tab {
+    flex-shrink: 0;
+    padding: 10px 16px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .modal-footer {
+    padding-top: 20px;
+  }
+
+  .related-chips {
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+
+  .related-chip {
+    padding: 6px 12px;
+    font-size: 11px;
+  }
+
+  .modal-cta {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 24px;
+    font-size: 15px;
   }
 }
 
 @media (max-width: 480px) {
+  /* Wizard */
   .wizard-option {
-    padding: 24px 16px;
+    padding: 20px 16px;
   }
 
   .wizard-icon {
@@ -962,12 +1270,70 @@ div.navbar-no-shadow,
     height: 24px;
   }
 
-  .modal-tabs {
-    overflow-x: auto;
+  .wizard-option-title {
+    font-size: 18px;
   }
 
-  .modal-tab {
-    flex-shrink: 0;
+  .wizard-option-desc {
+    font-size: 13px;
+  }
+
+  .browse-all-link {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+
+  /* Service Cards */
+  .service-card-bento {
+    padding: 20px 16px;
+  }
+
+  .service-name-bento {
+    font-size: 17px;
+  }
+
+  .service-desc-bento {
+    font-size: 13px;
+  }
+
+  /* Modal */
+  .modal-content {
+    padding: 20px 12px;
+  }
+
+  .modal-close {
+    width: 36px;
+    height: 36px;
+    top: 12px;
+    right: 12px;
+  }
+
+  .modal-title {
+    font-size: 20px;
+  }
+
+  .modal-header {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  /* Extra small phones */
+  .wizard-title {
+    font-size: 20px;
+  }
+
+  .services-grid-title {
+    font-size: 20px;
+  }
+
+  .service-name-bento {
+    font-size: 16px;
+  }
+
+  .modal-title {
+    font-size: 18px;
   }
 }
 
