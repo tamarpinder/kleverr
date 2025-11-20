@@ -562,6 +562,25 @@ document.addEventListener('DOMContentLoaded', () => {
   if (typeof lucide !== 'undefined') {
     lucide.createIcons();
   }
+
+  // Check if user came from homepage with service hash
+  const hash = window.location.hash.substring(1); // Remove the # symbol
+  if (hash) {
+    // Find the service with matching ID
+    const service = servicesData.find(s => s.id === hash);
+
+    if (service) {
+      // Small delay to ensure everything is initialized
+      setTimeout(() => {
+        // Show all services view first
+        showAllServices();
+        // Wait a bit more, then open the specific service modal
+        setTimeout(() => {
+          openServiceModal(service);
+        }, 200);
+      }, 300);
+    }
+  }
 });
 
 // ==========================================
