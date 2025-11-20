@@ -190,6 +190,31 @@
       border-style: dashed;
   }
 }
+
+/* Featured Services Section */
+.featured-services {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.services-footer-text {
+    margin-top: 16px;
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .services-footer-text {
+        font-size: 14px;
+        margin-top: 12px;
+    }
+}
 </style>
 </head>
 <body class="body-19">
@@ -279,250 +304,91 @@
       </div>
     </div>
   </section>
-  <!-- SERVICES SECTION - All Kleverr Services -->
+  <!-- SERVICES SECTION - Featured Services -->
   <section class="services-section kleverr-services">
     <div class="services-container">
       <div class="services-header">
         <h2 class="services-title" data-i18n="sections.ourServices">Our Services</h2>
-        <p class="services-subtitle" data-i18n="sections.servicesSubtitle">Comprehensive solutions to help your business thrive in the digital age</p>
+        <p class="services-subtitle" data-i18n="sections.servicesSubtitle">Transform your business with our most sought-after solutions for 2025</p>
       </div>
 
-      <!-- Service Categories Tabs -->
-      <div class="service-categories">
-        <button class="category-tab active" data-category="all" data-i18n="sections.allServices">All Services</button>
-        <button class="category-tab" data-category="development" data-i18n="sections.developmentCategory">Development</button>
-        <button class="category-tab" data-category="marketing" data-i18n="sections.marketingCategory">Marketing</button>
-        <button class="category-tab" data-category="ai" data-i18n="sections.aiCategory">AI & Automation</button>
-      </div>
+      <!-- Featured Services Grid (6 Services) -->
+      <div class="services-grid featured-services" id="servicesGrid">
 
-      <!-- Services Grid -->
-      <div class="services-grid" id="servicesGrid">
-
-        <!-- Digital Transformation -->
-        <div class="service-card" data-category="development">
+        <!-- 1. Digital Transformation -->
+        <div class="service-card featured-card">
           <div class="service-icon">
-            <i data-lucide="globe"></i>
+            <i data-lucide="sparkles"></i>
           </div>
-          <h3 class="service-name" data-i18n="services.digitalTransformation.title">Digital Transformation</h3>
-          <p class="service-description" data-i18n="services.digitalTransformation.description">Customized digital transformation strategies that meet your unique business needs. We analyze and identify areas for optimal digitization.</p>
-          <a href="#contact" class="service-cta">
-            <span data-i18n="cta.learnMore">Learn More</span>
+          <h3 class="service-name">Digital Transformation</h3>
+          <p class="service-description">End-to-end business modernization combining cloud migration, system integration, process automation, and AI implementation</p>
+          <a href="/services" class="service-cta">
+            <span>Explore Services</span>
             <i data-lucide="arrow-right"></i>
           </a>
         </div>
 
-        <!-- Application Development -->
-        <div class="service-card" data-category="development">
+        <!-- 2. AI-Powered Digital Marketing -->
+        <div class="service-card featured-card">
           <div class="service-icon">
-            <i data-lucide="code"></i>
+            <i data-lucide="trending-up"></i>
           </div>
-          <h3 class="service-name" data-i18n="services.applicationDevelopment.title">Application Development</h3>
-          <p class="service-description" data-i18n="services.applicationDevelopment.description">Agile development methodologies ensure efficient, cost-effective, and on-time solutions with precision and attention to detail.</p>
-          <a href="#contact" class="service-cta">
-            <span data-i18n="cta.learnMore">Learn More</span>
+          <h3 class="service-name">AI-Powered Digital Marketing</h3>
+          <p class="service-description">Full-suite marketing services enhanced with AI automation, content generation, predictive analytics, and intelligent lead nurturing</p>
+          <a href="/services" class="service-cta">
+            <span>Explore Services</span>
             <i data-lucide="arrow-right"></i>
           </a>
         </div>
 
-        <!-- Digital Marketing -->
-        <div class="service-card" data-category="marketing">
+        <!-- 3. AI-Powered Customer Support -->
+        <div class="service-card featured-card">
           <div class="service-icon">
-            <i data-lucide="megaphone"></i>
+            <i data-lucide="message-circle"></i>
           </div>
-          <h3 class="service-name" data-i18n="services.digitalMarketing.title">Digital Marketing</h3>
-          <p class="service-description" data-i18n="services.digitalMarketing.description">Inbound marketing strategies that attract customers with relevant content, building trust and loyalty for increased sales.</p>
-          <a href="#contact" class="service-cta">
-            <span data-i18n="cta.learnMore">Learn More</span>
+          <h3 class="service-name">AI-Powered Customer Support</h3>
+          <p class="service-description">24/7 intelligent chatbots, automated ticket routing, and AI-enhanced support workflows</p>
+          <a href="/services" class="service-cta">
+            <span>Explore Services</span>
             <i data-lucide="arrow-right"></i>
           </a>
         </div>
 
-        <!-- IT Managed Solutions -->
-        <div class="service-card" data-category="development">
+        <!-- 4. Intelligent Process Automation -->
+        <div class="service-card featured-card">
           <div class="service-icon">
-            <i data-lucide="server"></i>
+            <i data-lucide="cpu"></i>
           </div>
-          <h3 class="service-name" data-i18n="services.itManaged.title">IT Managed Solutions</h3>
-          <p class="service-description" data-i18n="services.itManaged.description">Strategic IT partnership dedicated to maximizing your investments while keeping your business ahead in the digital landscape.</p>
-          <a href="#contact" class="service-cta">
-            <span data-i18n="cta.learnMore">Learn More</span>
+          <h3 class="service-name">Intelligent Process Automation</h3>
+          <p class="service-description">AI-driven workflow automation that learns, adapts, and optimizes your operations</p>
+          <a href="/services" class="service-cta">
+            <span>Explore Services</span>
             <i data-lucide="arrow-right"></i>
           </a>
         </div>
 
-        <!-- Ecommerce -->
-        <div class="service-card" data-category="development">
-          <div class="service-icon">
-            <i data-lucide="shopping-cart"></i>
-          </div>
-          <h3 class="service-name" data-i18n="services.ecommerce.title">Ecommerce Solutions</h3>
-          <p class="service-description" data-i18n="services.ecommerce.description">Best-in-class, mobile-optimized eCommerce websites with advanced merchandising, payments, and customer loyalty programs.</p>
-          <a href="#contact" class="service-cta">
-            <span data-i18n="cta.learnMore">Learn More</span>
-            <i data-lucide="arrow-right"></i>
-          </a>
-        </div>
-
-        <!-- Web & Mobile Experiences -->
-        <div class="service-card" data-category="development">
+        <!-- 5. Custom Web & Mobile Applications -->
+        <div class="service-card featured-card">
           <div class="service-icon">
             <i data-lucide="smartphone"></i>
           </div>
-          <h3 class="service-name" data-i18n="services.webMobile.title">Web & Mobile Experiences</h3>
-          <p class="service-description" data-i18n="services.webMobile.description">Comprehensive web design and development services that engage visitors, tell your story, and connect with customers.</p>
-          <a href="#contact" class="service-cta">
-            <span data-i18n="cta.learnMore">Learn More</span>
+          <h3 class="service-name">Custom Web & Mobile Applications</h3>
+          <p class="service-description">Modern, AI-integrated applications built for performance, scalability, and exceptional user experiences</p>
+          <a href="/services" class="service-cta">
+            <span>Explore Services</span>
             <i data-lucide="arrow-right"></i>
           </a>
         </div>
 
-        <!-- Mobile Applications -->
-        <div class="service-card" data-category="development">
+        <!-- 6. AI Business Intelligence & Analytics -->
+        <div class="service-card featured-card">
           <div class="service-icon">
-            <i data-lucide="tablet-smartphone"></i>
-          </div>
-          <h3 class="service-name" data-i18n="services.mobileApps.title">Mobile Applications</h3>
-          <p class="service-description" data-i18n="services.mobileApps.description">Native and cross-platform mobile applications delivering exceptional user experiences on iOS and Android devices.</p>
-          <a href="#contact" class="service-cta">
-            <span data-i18n="cta.learnMore">Learn More</span>
-            <i data-lucide="arrow-right"></i>
-          </a>
-        </div>
-
-        <!-- Search Engine Optimization -->
-        <div class="service-card" data-category="marketing">
-          <div class="service-icon">
-            <i data-lucide="search"></i>
-          </div>
-          <h3 class="service-name" data-i18n="services.seo.title">Search Engine Optimization</h3>
-          <p class="service-description" data-i18n="services.seo.description">Strategic SEO optimization that increases visibility, drives organic traffic, and establishes industry authority.</p>
-          <a href="#contact" class="service-cta">
-            <span data-i18n="cta.learnMore">Learn More</span>
-            <i data-lucide="arrow-right"></i>
-          </a>
-        </div>
-
-        <!-- Social Media Management -->
-        <div class="service-card" data-category="marketing">
-          <div class="service-icon">
-            <i data-lucide="users"></i>
-          </div>
-          <h3 class="service-name" data-i18n="services.socialMedia.title">Social Media Management</h3>
-          <p class="service-description" data-i18n="services.socialMedia.description">Build communities with strategic content creation, engagement management, and data-driven social campaigns.</p>
-          <a href="#contact" class="service-cta">
-            <span data-i18n="cta.learnMore">Learn More</span>
-            <i data-lucide="arrow-right"></i>
-          </a>
-        </div>
-
-        <!-- Ad Creative -->
-        <div class="service-card" data-category="marketing">
-          <div class="service-icon">
-            <i data-lucide="palette"></i>
-          </div>
-          <h3 class="service-name" data-i18n="services.adCreative.title">Ad Creative</h3>
-          <p class="service-description" data-i18n="services.adCreative.description">High-performance creative campaigns across all channels. Designs that help your brand stand out and thrive.</p>
-          <a href="#contact" class="service-cta">
-            <span data-i18n="cta.learnMore">Learn More</span>
-            <i data-lucide="arrow-right"></i>
-          </a>
-        </div>
-
-        <!-- Brand & Reputation Management -->
-        <div class="service-card" data-category="marketing">
-          <div class="service-icon">
-            <i data-lucide="shield-check"></i>
-          </div>
-          <h3 class="service-name" data-i18n="services.brandReputation.title">Brand & Reputation Management</h3>
-          <p class="service-description" data-i18n="services.brandReputation.description">Monitor, manage, and enhance your online presence, turning brand culture into brand advocacy.</p>
-          <a href="#contact" class="service-cta">
-            <span data-i18n="cta.learnMore">Learn More</span>
-            <i data-lucide="arrow-right"></i>
-          </a>
-        </div>
-
-        <!-- AI AUTOMATION SERVICES -->
-
-        <!-- AI Workflow Automation -->
-        <div class="service-card ai-service" data-category="ai">
-          <div class="service-icon ai-icon">
-            <i data-lucide="bot"></i>
-          </div>
-          <div class="ai-badge">NEW</div>
-          <h3 class="service-name" data-i18n="services.aiWorkflow.title">AI Workflow Automation</h3>
-          <p class="service-description" data-i18n="services.aiWorkflow.description">Intelligent automation that learns and optimizes. Eliminate repetitive tasks and reduce operational costs by up to 40%.</p>
-          <a href="#contact" class="service-cta">
-            <span data-i18n="cta.learnMore">Learn More</span>
-            <i data-lucide="arrow-right"></i>
-          </a>
-        </div>
-
-        <!-- Intelligent Business Analytics -->
-        <div class="service-card ai-service" data-category="ai">
-          <div class="service-icon ai-icon">
             <i data-lucide="bar-chart-3"></i>
           </div>
-          <div class="ai-badge">NEW</div>
-          <h3 class="service-name" data-i18n="services.aiAnalytics.title">Intelligent Business Analytics</h3>
-          <p class="service-description" data-i18n="services.aiAnalytics.description">AI-powered analytics platforms providing real-time intelligence, predictive forecasting, and automated reporting.</p>
-          <a href="#contact" class="service-cta">
-            <span data-i18n="cta.learnMore">Learn More</span>
-            <i data-lucide="arrow-right"></i>
-          </a>
-        </div>
-
-        <!-- AI-Powered Customer Engagement -->
-        <div class="service-card ai-service" data-category="ai">
-          <div class="service-icon ai-icon">
-            <i data-lucide="message-circle"></i>
-          </div>
-          <div class="ai-badge">NEW</div>
-          <h3 class="service-name" data-i18n="services.aiCustomer.title">AI-Powered Customer Engagement</h3>
-          <p class="service-description" data-i18n="services.aiCustomer.description">24/7 intelligent chatbots with natural language processing. Reduce support costs by 60% with instant responses.</p>
-          <a href="#contact" class="service-cta">
-            <span data-i18n="cta.learnMore">Learn More</span>
-            <i data-lucide="arrow-right"></i>
-          </a>
-        </div>
-
-        <!-- Intelligent Document Processing -->
-        <div class="service-card ai-service" data-category="ai">
-          <div class="service-icon ai-icon">
-            <i data-lucide="file-scan"></i>
-          </div>
-          <div class="ai-badge">NEW</div>
-          <h3 class="service-name" data-i18n="services.aiDocument.title">Intelligent Document Processing</h3>
-          <p class="service-description" data-i18n="services.aiDocument.description">Automate document extraction and processing with 99%+ accuracy. Reduce processing time by 80%.</p>
-          <a href="#contact" class="service-cta">
-            <span data-i18n="cta.learnMore">Learn More</span>
-            <i data-lucide="arrow-right"></i>
-          </a>
-        </div>
-
-        <!-- Predictive Business Optimization -->
-        <div class="service-card ai-service" data-category="ai">
-          <div class="service-icon ai-icon">
-            <i data-lucide="trending-up"></i>
-          </div>
-          <div class="ai-badge">NEW</div>
-          <h3 class="service-name" data-i18n="services.aiPredictive.title">Predictive Business Optimization</h3>
-          <p class="service-description" data-i18n="services.aiPredictive.description">Stay ahead with AI-powered forecasting. Predict demand, optimize inventory, and identify growth opportunities.</p>
-          <a href="#contact" class="service-cta">
-            <span data-i18n="cta.learnMore">Learn More</span>
-            <i data-lucide="arrow-right"></i>
-          </a>
-        </div>
-
-        <!-- AI-Enhanced Content Creation -->
-        <div class="service-card ai-service" data-category="ai">
-          <div class="service-icon ai-icon">
-            <i data-lucide="sparkles"></i>
-          </div>
-          <div class="ai-badge">NEW</div>
-          <h3 class="service-name" data-i18n="services.aiContent.title">AI-Enhanced Content Creation</h3>
-          <p class="service-description" data-i18n="services.aiContent.description">Generate, optimize, and personalize content at scale. Reduce content creation time by 70%.</p>
-          <a href="#contact" class="service-cta">
-            <span data-i18n="cta.learnMore">Learn More</span>
+          <h3 class="service-name">AI Business Intelligence & Analytics</h3>
+          <p class="service-description">Transform data into actionable insights with predictive analytics, real-time dashboards, and AI-powered reporting</p>
+          <a href="/services" class="service-cta">
+            <span>Explore Services</span>
             <i data-lucide="arrow-right"></i>
           </a>
         </div>
@@ -531,10 +397,11 @@
 
       <!-- View All Services CTA -->
       <div class="services-footer">
-        <a href="/contact" class="services-main-cta">
-          <span data-i18n="nav.consultation">Get a Free Consultation</span>
+        <a href="/services" class="services-main-cta">
+          <span>Find Your Perfect Solution</span>
           <i data-lucide="arrow-right"></i>
         </a>
+        <p class="services-footer-text">Not sure where to start? Take our 30-second quiz</p>
       </div>
     </div>
   </section>
