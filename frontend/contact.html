@@ -1,350 +1,1823 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Mon Aug 25 2025 19:02:40 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html>
 <html data-wf-page="64b68ca345c2ac6152260659" data-wf-site="64b68ca245c2ac61522605c9">
 <head>
   <meta charset="utf-8">
-  <title>Contact</title>
-  <meta content="Contact" property="og:title">
-  <meta content="Contact" property="twitter:title">
+  <title>Contact Us - Let's Build Something Extraordinary | Kleverr</title>
+  <meta name="description" content="Get in touch with Kleverr's team of technology experts. Schedule a call, tell us about your project, or send us a quick message.">
+  <meta content="Contact Us - Let's Build Something Extraordinary | Kleverr" property="og:title">
+  <meta content="Contact Us - Let's Build Something Extraordinary | Kleverr" property="twitter:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <link href="assets/css/normalize.css" rel="stylesheet" type="text/css">
   <link href="assets/css/webflow.css" rel="stylesheet" type="text/css">
   <link href="assets/css/kleverr.webflow.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/futuristic.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
-  <script type="text/javascript">WebFont.load({  google: {    families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic","Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic","Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic","Raleway:100,200,300,regular,500,600,700,800,900","Inter:100,200,300,regular,500,600,700,800,900","Raleway:100,200,300,regular,500,600,700,800,900"]  }});</script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic","Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic","Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic","Raleway:100,200,300,regular,500,600,700,800,900","Inter:100,200,300,regular,500,600,700,800,900"]  }});</script>
   <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
   <link href="assets/images/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="assets/images/webclip.jpg" rel="apple-touch-icon">
   <script id="jetboost-script" type="text/javascript"> window.JETBOOST_SITE_ID = "clq6m2oy0001e0qvpdscrgl3b"; (function(d) { var s = d.createElement("script"); s.src = "https://cdn.jetboost.io/jetboost.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })(document); </script>
   <style>
-.footer_button:after {
+/* Transparent navbar overlay on hero */
+.navbar-no-shadow {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    z-index: 1000 !important;
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+.navbar-no-shadow-container-2,
+.navbar-wrapper-2,
+div.navbar-no-shadow,
+.w-nav {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+/* White logo on purple background */
+.navbar-brand-2 .image-16 {
+    filter: none !important;
+}
+
+/* White text for navbar on purple background */
+.nav-link-2 {
+    color: #fff !important;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.nav-link-2::after {
     content: '';
-    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+.nav-link-2:hover {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.nav-link-2:hover::after {
     width: 100%;
-    background:  #3b1f6e;
-    position: absolute;
-    transform: translateY(100%);
+}
+
+/* Keep current page link white */
+.nav-link-2.w--current {
+    color: #fff !important;
+}
+
+/* Show underline for current/active page */
+.nav-link-2.w--current::after {
+    width: 100% !important;
+}
+
+/* Ensure consultation buttons are visible */
+.nav_btn,
+.nav_main_btn {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: #fff !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.nav_btn:hover,
+.nav_main_btn:hover {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Language toggle styling for purple background */
+.language-toggle {
+    color: #fff !important;
+    background-color: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.language-toggle option {
+    color: #000 !important;
+    background-color: #fff !important;
+}
+
+.text-block-64 {
+    color: #fff !important;
+}
+
+/* Media query override for mobile menu */
+@media screen and (max-width: 991px) {
+    .nav-menu-wrapper-2,
+    .nav-menu-2 {
+        background: #2B1343 !important;
+        background-color: #2B1343 !important;
+    }
+
+    .nav-link-2 {
+        color: #fff !important;
+    }
+}
+
+/* Contact Hero Section */
+.contact-hero {
+    background: linear-gradient(135deg, #6B46C1 0%, #8000FF 50%, #6B46C1 100%);
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     overflow: hidden;
-    transition: ease-out 0.5s;
-    color: #fff;
-    z-index: -1;
-    border-top-left-radius: 80%;
-    border-top-right-radius: 80%;
+    padding: 120px 20px 80px;
 }
-.button-2:hover:after {
-    transform: translateY(0px) !important;
-    border-top-left-radius: 0% !important;
-    border-top-right-radius: 0% !important;
-}.close-text:before {
+
+.contact-hero::before {
     content: '';
-    height: 100%;
-    border-radius: 63px;
-    width: 42px;
-    background: #3e2170;
-    top: 0;
     position: absolute;
-    z-index: -1;
-    transform: translateX(-13px);
-    transition: 0.5s ease;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml;utf8,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></svg>');
+    opacity: 0.4;
 }
-.close-text:hover:before {
-    width: 96px;
+
+.contact-hero-content {
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    margin: 0 auto;
 }
-.hover-btn:hover img{
-	content: url(https://uploads-ssl.webflow.com/64b68ca245c2ac61522605c9/6579aa1d694f43158583e981_black-arrow.svg);
+
+.contact-hero h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: white;
+}
+
+.contact-hero p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    opacity: 0.95;
+    color: white;
+}
+
+/* Contact Options Section */
+.contact-options-section {
+    padding: 80px 20px;
+    background: #F9FAFB;
+}
+
+.contact-options-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-options-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.contact-option-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-option-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(107, 70, 193, 0.2);
+}
+
+.contact-option-card.recommended::before {
+    content: 'Recommended';
+    position: absolute;
+    top: 20px;
+    right: -35px;
+    background: linear-gradient(135deg, #6B46C1, #8000FF);
+    color: white;
+    padding: 6px 40px;
+    font-size: 12px;
+    font-weight: 600;
+    transform: rotate(45deg);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.contact-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    background: linear-gradient(135deg, rgba(107, 70, 193, 0.1), rgba(128, 0, 255, 0.1));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.contact-option-card:hover .contact-icon-wrapper {
+    background: linear-gradient(135deg, #6B46C1, #8000FF);
+}
+
+.contact-icon-wrapper svg {
+    width: 36px;
+    height: 36px;
+    color: #6B46C1;
+    transition: all 0.3s ease;
+}
+
+.contact-option-card:hover .contact-icon-wrapper svg {
+    color: white;
+}
+
+.contact-option-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 12px;
+}
+
+.contact-option-description {
+    font-size: 15px;
+    color: #6B7280;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    min-height: 48px;
+}
+
+.contact-option-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #6B46C1, #8000FF);
+    color: white;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-option-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(107, 70, 193, 0.3);
+}
+
+.contact-option-btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+.contact-option-meta {
+    font-size: 13px;
+    color: #9CA3AF;
+    margin-top: 15px;
+}
+
+/* Progressive Form Container */
+.progressive-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
+    padding: 50px;
+    display: none;
+}
+
+.progressive-form-container.active {
+    display: block;
+}
+
+.form-progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #E5E7EB;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.form-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #6B46C1, #8000FF);
+    border-radius: 10px;
+    transition: width 0.4s ease;
+    width: 0%;
+}
+
+.form-step {
+    display: none;
+}
+
+.form-step.active {
+    display: block;
+    animation: fadeInUp 0.5s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-step-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 10px;
+}
+
+.form-step-subtitle {
+    font-size: 15px;
+    color: #6B7280;
+    margin-bottom: 35px;
+}
+
+.form-options-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.form-option-card {
+    background: #F9FAFB;
+    border: 2px solid #E5E7EB;
+    border-radius: 16px;
+    padding: 24px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-option-card:hover {
+    border-color: #6B46C1;
+    background: rgba(107, 70, 193, 0.05);
+}
+
+.form-option-card.selected {
+    border-color: #8000FF;
+    background: linear-gradient(135deg, rgba(107, 70, 193, 0.1), rgba(128, 0, 255, 0.1));
+}
+
+.form-option-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-option-icon svg {
+    width: 32px;
+    height: 32px;
+    color: #6B46C1;
+}
+
+.form-option-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1F2937;
+}
+
+.form-checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.form-checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 20px;
+    background: #F9FAFB;
+    border: 2px solid #E5E7EB;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-checkbox-item:hover {
+    border-color: #6B46C1;
+    background: rgba(107, 70, 193, 0.05);
+}
+
+.form-checkbox-item.selected {
+    border-color: #8000FF;
+    background: linear-gradient(135deg, rgba(107, 70, 193, 0.1), rgba(128, 0, 255, 0.1));
+}
+
+.form-checkbox-item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.form-checkbox-label {
+    font-size: 15px;
+    font-weight: 500;
+    color: #1F2937;
+    cursor: pointer;
+}
+
+.form-textarea {
+    width: 100%;
+    min-height: 150px;
+    padding: 16px 20px;
+    border: 2px solid #E5E7EB;
+    border-radius: 12px;
+    font-size: 15px;
+    font-family: inherit;
+    resize: vertical;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.form-textarea:focus {
+    outline: none;
+    border-color: #8000FF;
+    box-shadow: 0 0 0 4px rgba(128, 0, 255, 0.1);
+}
+
+.form-tip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    background: rgba(107, 70, 193, 0.05);
+    border-radius: 8px;
+    margin-bottom: 35px;
+}
+
+.form-tip svg {
+    width: 18px;
+    height: 18px;
+    color: #6B46C1;
+    flex-shrink: 0;
+}
+
+.form-tip-text {
+    font-size: 14px;
+    color: #6B7280;
+}
+
+.form-input {
+    width: 100%;
+    padding: 16px 20px;
+    border: 2px solid #E5E7EB;
+    border-radius: 12px;
+    font-size: 15px;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #8000FF;
+    box-shadow: 0 0 0 4px rgba(128, 0, 255, 0.1);
+}
+
+.form-input-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 8px;
+}
+
+.form-input-optional {
+    font-size: 13px;
+    font-weight: 400;
+    color: #9CA3AF;
+}
+
+.form-nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.form-btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 28px;
+    background: white;
+    border: 2px solid #E5E7EB;
+    color: #6B7280;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-btn-back:hover {
+    border-color: #6B46C1;
+    color: #6B46C1;
+}
+
+.form-btn-back svg {
+    width: 18px;
+    height: 18px;
+}
+
+.form-btn-next {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #6B46C1, #8000FF);
+    color: white;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-btn-next:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(107, 70, 193, 0.3);
+}
+
+.form-btn-next svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Success Screen */
+.success-screen {
+    display: none;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.success-screen.active {
+    display: block;
+    animation: fadeInUp 0.5s ease;
+}
+
+.success-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 30px;
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.1));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.success-icon svg {
+    width: 50px;
+    height: 50px;
+    color: #10B981;
+}
+
+.success-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 15px;
+}
+
+.success-message {
+    font-size: 16px;
+    color: #6B7280;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.success-steps {
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto 40px;
+}
+
+.success-step {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.success-step-number {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #6B46C1, #8000FF);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.success-step-content {
+    flex: 1;
+    padding-top: 8px;
+}
+
+.success-step-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1F2937;
+    margin-bottom: 4px;
+}
+
+.success-step-description {
+    font-size: 14px;
+    color: #6B7280;
+}
+
+.success-email {
+    padding: 12px 20px;
+    background: rgba(107, 70, 193, 0.05);
+    border-radius: 8px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #6B7280;
+}
+
+.success-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Alternative Contact Methods */
+.alternative-contact {
+    margin-top: 60px;
+    padding-top: 60px;
+    border-top: 2px solid #E5E7EB;
+}
+
+.alternative-contact-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 40px;
+}
+
+.alternative-contact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.alternative-contact-item {
+    text-align: center;
+}
+
+.alternative-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+    background: linear-gradient(135deg, rgba(107, 70, 193, 0.1), rgba(128, 0, 255, 0.1));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alternative-icon-wrapper svg {
+    width: 28px;
+    height: 28px;
+    color: #6B46C1;
+}
+
+.alternative-contact-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1F2937;
+    margin-bottom: 6px;
+}
+
+.alternative-contact-value {
+    font-size: 15px;
+    color: #6B46C1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.alternative-contact-value:hover {
+    color: #8000FF;
+}
+
+/* Mobile Responsive */
+@media (max-width: 991px) {
+    .contact-options-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .progressive-form-container {
+        padding: 35px 25px;
+    }
+
+    .form-options-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .alternative-contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-hero h1 {
+        font-size: 36px;
+    }
+
+    .contact-hero p {
+        font-size: 16px;
+    }
+
+    .contact-options-section {
+        padding: 50px 20px;
+    }
+
+    .progressive-form-container {
+        padding: 30px 20px;
+    }
+
+    .form-step-title {
+        font-size: 24px;
+    }
+
+    .form-nav-buttons {
+        flex-direction: column-reverse;
+    }
+
+    .form-btn-back,
+    .form-btn-next {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .alternative-contact-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .success-actions {
+        flex-direction: column;
+    }
+
+    .success-actions .contact-option-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Quick Message Form */
+.quick-message-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
+    padding: 50px;
+    display: none;
+}
+
+.quick-message-container.active {
+    display: block;
+}
+
+.quick-message-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.quick-message-subtitle {
+    font-size: 16px;
+    color: #6B7280;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Hover button effects */
+.hover-btn:hover img {
+    content: url(https://uploads-ssl.webflow.com/64b68ca245c2ac61522605c9/6579aa1d694f43158583e981_black-arrow.svg);
+}
+
+/* Mobile-specific footer styling */
+@media (max-width: 768px) {
+    .footer-bottom {
+        background: transparent !important;
+    }
+}
+
+/* Cal.com Scheduling Modal */
+.schedule-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(31, 41, 55, 0.8);
+    backdrop-filter: blur(8px);
+    z-index: 10000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.schedule-modal-overlay.active {
+    display: flex;
+    opacity: 1;
+}
+
+.schedule-modal {
+    background: white;
+    border-radius: 24px;
+    max-width: 1000px;
+    width: 100%;
+    max-height: 90vh;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(107, 70, 193, 0.25);
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.schedule-modal-overlay.active .schedule-modal {
+    transform: scale(1);
+}
+
+.schedule-modal-header {
+    background: linear-gradient(135deg, #6B46C1 0%, #8000FF 50%, #6B46C1 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 8s ease infinite;
+    padding: 30px;
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.schedule-modal-header h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    margin: 0 0 8px 0;
+}
+
+.schedule-modal-header p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+}
+
+.schedule-modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.schedule-modal-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: rotate(90deg);
+}
+
+.schedule-modal-close svg {
+    width: 20px;
+    height: 20px;
+}
+
+.schedule-modal-body {
+    height: calc(90vh - 120px);
+    max-height: 700px;
+    background: white;
+}
+
+.schedule-modal-body iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@keyframes gradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+@media (max-width: 768px) {
+    .schedule-modal {
+        max-width: 100%;
+        max-height: 95vh;
+        border-radius: 16px;
+    }
+
+    .schedule-modal-header {
+        padding: 25px 20px;
+    }
+
+    .schedule-modal-header h2 {
+        font-size: 22px;
+        margin-right: 40px;
+    }
+
+    .schedule-modal-header p {
+        font-size: 14px;
+    }
+
+    .schedule-modal-body {
+        height: calc(95vh - 100px);
+    }
 }
 </style>
 </head>
 <body class="body-3">
-  <div class="section contact_us_section">
-    <div class="navbar-no-shadow">
-      <div data-animation="over-left" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-no-shadow-container-2 w-nav">
-        <div class="container-regular-2">
-          <div class="navbar-wrapper-2">
-            <a href="index.html" class="navbar-brand-2 w-nav-brand"><img src="assets/images/Mask-group_1.svg" loading="lazy" alt="logo" class="image-16"></a>
-            <nav role="navigation" class="nav-menu-wrapper-2 w-nav-menu">
-              <div class="nav-head"><img src="assets/images/favicon-32x32-1.png" loading="lazy" alt="" class="side-nav-logo">
-                <a href="#" class="w-inline-block"><img src="assets/images/cross-icon.svg" loading="lazy" alt=""></a>
-              </div>
-              <ul role="list" class="nav-menu-2 w-list-unstyled">
-                <li class="list-item-13">
-                  <a href="about.html" class="nav-link-2">About</a>
-                </li>
-                <li class="list-item-16">
-                  <a href="services.html" class="nav-link-2">Services</a>
-                </li>
-                <li class="list-item-14 hidden"></li>
-                <li class="list-item-15 hidden"></li>
-                <li class="list-item-16">
-                  <a href="case-studies.html" class="nav-link-2">Case Studies</a>
-                </li>
-                <li class="list-item-16 hidden"></li>
-                <li class="list-item-16">
-                  <a href="contact.html" aria-current="page" class="nav-link-2 w--current">Contact</a>
-                </li>
-              </ul>
-              <a data-w-id="0193f484-1ed9-3bfe-aee4-f61e66070b28" href="consultation.html" class="link-block-6 nav_btn hover-btn w-inline-block">
-                <div>Get a Free Consultation</div><img src="assets/images/Vector_3.svg" loading="lazy" alt="" class="image-15">
-              </a>
-            </nav>
-            <div class="menu-button-3 w-nav-button">
-              <div class="icon-5 w-icon-nav-menu"></div><img src="assets/images/menu_1.svg" loading="lazy" alt="">
+  <!-- Navigation -->
+  <div class="navbar-no-shadow">
+    <div data-animation="over-left" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-no-shadow-container-2 w-nav">
+      <div class="container-regular-2">
+        <div class="navbar-wrapper-2">
+          <a href="/" class="navbar-brand-2 w-nav-brand"><img src="assets/images/Mask-group_1.svg" loading="lazy" alt="logo" class="image-16"></a>
+          <nav role="navigation" class="nav-menu-wrapper-2 w-nav-menu">
+            <div class="nav-head"><img src="assets/images/favicon-32x32-1.png" loading="lazy" alt="" class="side-nav-logo">
+              <a href="#" class="w-inline-block"><img src="assets/images/cross-icon.svg" loading="lazy" alt=""></a>
             </div>
-            <a data-w-id="0193f484-1ed9-3bfe-aee4-f61e66070b2f" href="contact.html" aria-current="page" class="link-block-6 nav_main_btn hover-btn w-inline-block w--current">
-              <div data-w-id="0193f484-1ed9-3bfe-aee4-f61e66070b30" class="text-block-64">Get a Free Consultation</div><img src="assets/images/Vector_3.svg" loading="lazy" alt="" class="image-15">
+            <ul role="list" class="nav-menu-2 w-list-unstyled">
+              <li class="list-item-13">
+                <a href="/" class="nav-link-2" data-i18n="nav.home">Home</a>
+              </li>
+              <li class="list-item-13">
+                <a href="/about" class="nav-link-2" data-i18n="nav.about">About</a>
+              </li>
+              <li class="list-item-16">
+                <a href="/services" class="nav-link-2" data-i18n="nav.services">Services</a>
+              </li>
+              <li class="list-item-14 hidden"></li>
+              <li class="list-item-15 hidden"></li>
+              <li class="list-item-16">
+                <a href="case-studies.html" class="nav-link-2" data-i18n="nav.caseStudies">Case Studies</a>
+              </li>
+              <li class="list-item-16 hidden"></li>
+              <li class="list-item-16">
+                <a href="/contact" aria-current="page" class="nav-link-2 w--current" data-i18n="nav.contact">Contact</a>
+              </li>
+            </ul>
+            <div class="nav-toggles-container">
+              <div class="language-toggle-container">
+                <select id="language-toggle" class="language-toggle">
+                  <option value="en">EN</option>
+                  <option value="es">ES</option>
+                </select>
+              </div>
+            </div>
+            <a data-w-id="0193f484-1ed9-3bfe-aee4-f61e66070b28" href="/contact" class="link-block-6 nav_btn hover-btn w-inline-block">
+              <div data-i18n="nav.consultation">Get a Free Consultation</div><img src="assets/images/Vector_3.svg" loading="lazy" alt="" class="image-15">
+            </a>
+          </nav>
+          <div class="menu-button-3 w-nav-button">
+            <div class="icon-5 w-icon-nav-menu"></div><img src="assets/images/menu_1.svg" loading="lazy" alt="">
+          </div>
+          <a data-w-id="0193f484-1ed9-3bfe-aee4-f61e66070b2f" href="/contact" aria-current="page" class="link-block-6 nav_main_btn hover-btn w-inline-block w--current">
+            <div data-w-id="0193f484-1ed9-3bfe-aee4-f61e66070b30" class="text-block-64" data-i18n="nav.consultation">Get a Free Consultation</div><img src="assets/images/Vector_3.svg" loading="lazy" alt="" class="image-15">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="contact-hero">
+    <div class="contact-hero-content">
+      <h1 data-i18n="contact.hero.title">Let's Build Something Extraordinary Together</h1>
+      <p data-i18n="contact.hero.subtitle">Choose how you'd like to connect with us - we're here to help bring your vision to life.</p>
+    </div>
+  </div>
+
+  <!-- Contact Options Section -->
+  <div class="contact-options-section">
+    <div class="contact-options-container">
+
+      <!-- Three Contact Option Cards -->
+      <div class="contact-options-grid" id="contact-options-grid">
+        <!-- Schedule Call -->
+        <div class="contact-option-card" onclick="showScheduleCall()">
+          <div class="contact-icon-wrapper">
+            <i data-lucide="calendar-check"></i>
+          </div>
+          <h3 class="contact-option-title" data-i18n="contact.option.schedule.title">Schedule Call</h3>
+          <p class="contact-option-description" data-i18n="contact.option.schedule.description">Book a time that works for you</p>
+          <button class="contact-option-btn" onclick="event.stopPropagation(); showScheduleCall()">
+            <span data-i18n="contact.option.schedule.btn">Pick a Time Slot</span>
+            <i data-lucide="arrow-right"></i>
+          </button>
+          <p class="contact-option-meta" data-i18n="contact.option.schedule.meta">15-30 min call</p>
+        </div>
+
+        <!-- Project Brief (Recommended) -->
+        <div class="contact-option-card recommended" onclick="showProjectBrief()">
+          <div class="contact-icon-wrapper">
+            <i data-lucide="clipboard-list"></i>
+          </div>
+          <h3 class="contact-option-title" data-i18n="contact.option.brief.title">Project Brief</h3>
+          <p class="contact-option-description" data-i18n="contact.option.brief.description">Tell us about your project in detail</p>
+          <button class="contact-option-btn" onclick="event.stopPropagation(); showProjectBrief()">
+            <span data-i18n="contact.option.brief.btn">Start Brief</span>
+            <i data-lucide="arrow-right"></i>
+          </button>
+          <p class="contact-option-meta" data-i18n="contact.option.brief.meta">Recommended path</p>
+        </div>
+
+        <!-- Quick Message -->
+        <div class="contact-option-card" onclick="showQuickMessage()">
+          <div class="contact-icon-wrapper">
+            <i data-lucide="message-square"></i>
+          </div>
+          <h3 class="contact-option-title" data-i18n="contact.option.quick.title">Quick Message</h3>
+          <p class="contact-option-description" data-i18n="contact.option.quick.description">Just have a quick question?</p>
+          <button class="contact-option-btn" onclick="event.stopPropagation(); showQuickMessage()">
+            <span data-i18n="contact.option.quick.btn">Send Message</span>
+            <i data-lucide="arrow-right"></i>
+          </button>
+          <p class="contact-option-meta" data-i18n="contact.option.quick.meta">We reply in 24hrs</p>
+        </div>
+      </div>
+
+      <!-- Progressive Form Container (Hidden by default) -->
+      <div class="progressive-form-container" id="progressive-form">
+        <div class="form-progress-bar">
+          <div class="form-progress-fill" id="progress-fill"></div>
+        </div>
+
+        <!-- Step 1: Project Type -->
+        <div class="form-step active" id="step-1">
+          <h2 class="form-step-title" data-i18n="contact.form.step1.title">What brings you to Kleverr today?</h2>
+          <p class="form-step-subtitle" data-i18n="contact.form.step1.subtitle">Select the option that best describes your needs</p>
+
+          <div class="form-options-grid">
+            <div class="form-option-card" onclick="selectOption(this, 'new-project')">
+              <div class="form-option-icon">
+                <i data-lucide="rocket"></i>
+              </div>
+              <div class="form-option-label" data-i18n="contact.form.step1.newProject">New Project</div>
+            </div>
+
+            <div class="form-option-card" onclick="selectOption(this, 'modernize')">
+              <div class="form-option-icon">
+                <i data-lucide="wrench"></i>
+              </div>
+              <div class="form-option-label" data-i18n="contact.form.step1.modernize">Modernize Existing</div>
+            </div>
+
+            <div class="form-option-card" onclick="selectOption(this, 'consultation')">
+              <div class="form-option-icon">
+                <i data-lucide="lightbulb"></i>
+              </div>
+              <div class="form-option-label" data-i18n="contact.form.step1.consultation">Consultation</div>
+            </div>
+
+            <div class="form-option-card" onclick="selectOption(this, 'partnership')">
+              <div class="form-option-icon">
+                <i data-lucide="handshake"></i>
+              </div>
+              <div class="form-option-label" data-i18n="contact.form.step1.partnership">Partnership</div>
+            </div>
+          </div>
+
+          <div class="form-nav-buttons">
+            <button class="form-btn-back" onclick="hideProjectBrief()">
+              <i data-lucide="arrow-left"></i>
+              <span data-i18n="contact.form.back">Back to Options</span>
+            </button>
+            <button class="form-btn-next" onclick="nextStep(2)" id="step1-next" disabled>
+              <span data-i18n="contact.form.continue">Continue</span>
+              <i data-lucide="arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 2: Solution Type -->
+        <div class="form-step" id="step-2">
+          <h2 class="form-step-title" data-i18n="contact.form.step2.title">What type of solution do you need?</h2>
+          <p class="form-step-subtitle" data-i18n="contact.form.step2.subtitle">Select all that apply</p>
+
+          <div class="form-checkbox-group">
+            <div class="form-checkbox-item" onclick="toggleCheckbox(this, 'web-dev')">
+              <input type="checkbox" id="web-dev">
+              <label class="form-checkbox-label" for="web-dev" data-i18n="contact.form.step2.webDev">Web Development</label>
+            </div>
+
+            <div class="form-checkbox-item" onclick="toggleCheckbox(this, 'mobile-app')">
+              <input type="checkbox" id="mobile-app">
+              <label class="form-checkbox-label" for="mobile-app" data-i18n="contact.form.step2.mobileApp">Mobile App (iOS/Android)</label>
+            </div>
+
+            <div class="form-checkbox-item" onclick="toggleCheckbox(this, 'cloud')">
+              <input type="checkbox" id="cloud">
+              <label class="form-checkbox-label" for="cloud" data-i18n="contact.form.step2.cloud">Cloud Infrastructure</label>
+            </div>
+
+            <div class="form-checkbox-item" onclick="toggleCheckbox(this, 'ai-ml')">
+              <input type="checkbox" id="ai-ml">
+              <label class="form-checkbox-label" for="ai-ml" data-i18n="contact.form.step2.aiMl">AI/ML Integration</label>
+            </div>
+
+            <div class="form-checkbox-item" onclick="toggleCheckbox(this, 'integration')">
+              <input type="checkbox" id="integration">
+              <label class="form-checkbox-label" for="integration" data-i18n="contact.form.step2.integration">System Integration</label>
+            </div>
+          </div>
+
+          <div class="form-nav-buttons">
+            <button class="form-btn-back" onclick="prevStep(1)">
+              <i data-lucide="arrow-left"></i>
+              <span data-i18n="contact.form.back">Back</span>
+            </button>
+            <button class="form-btn-next" onclick="nextStep(3)" id="step2-next">
+              <span data-i18n="contact.form.continue">Continue</span>
+              <i data-lucide="arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 3: Project Description -->
+        <div class="form-step" id="step-3">
+          <h2 class="form-step-title" data-i18n="contact.form.step3.title">Tell us about your project</h2>
+          <p class="form-step-subtitle" data-i18n="contact.form.step3.subtitle">Share your vision, goals, and challenges</p>
+
+          <textarea
+            class="form-textarea"
+            id="project-description"
+            placeholder="Describe your business challenge, goals, or what you're looking to build..."
+            data-i18n-placeholder="contact.form.step3.placeholder"
+          ></textarea>
+
+          <div class="form-tip">
+            <i data-lucide="lightbulb"></i>
+            <span class="form-tip-text" data-i18n="contact.form.step3.tip">Tip: The more details you share, the better we can prepare for our conversation</span>
+          </div>
+
+          <div class="form-nav-buttons">
+            <button class="form-btn-back" onclick="prevStep(2)">
+              <i data-lucide="arrow-left"></i>
+              <span data-i18n="contact.form.back">Back</span>
+            </button>
+            <button class="form-btn-next" onclick="nextStep(4)" id="step3-next">
+              <span data-i18n="contact.form.continue">Continue</span>
+              <i data-lucide="arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 4: Timeline & Budget -->
+        <div class="form-step" id="step-4">
+          <h2 class="form-step-title" data-i18n="contact.form.step4.title">What's your timeline and budget?</h2>
+          <p class="form-step-subtitle" data-i18n="contact.form.step4.subtitle">Help us understand your project scope</p>
+
+          <div style="margin-bottom: 30px;">
+            <label class="form-input-label" data-i18n="contact.form.step4.timeline">Timeline:</label>
+            <div class="form-options-grid">
+              <div class="form-option-card" onclick="selectOption(this, 'urgent')">
+                <div class="form-option-icon">
+                  <i data-lucide="zap"></i>
+                </div>
+                <div class="form-option-label" data-i18n="contact.form.step4.urgent">Urgent (<1 month)</div>
+              </div>
+
+              <div class="form-option-card" onclick="selectOption(this, '1-3-months')">
+                <div class="form-option-icon">
+                  <i data-lucide="calendar"></i>
+                </div>
+                <div class="form-option-label" data-i18n="contact.form.step4.medium">1-3 Months</div>
+              </div>
+
+              <div class="form-option-card" onclick="selectOption(this, '3-6-months')">
+                <div class="form-option-icon">
+                  <i data-lucide="calendar-range"></i>
+                </div>
+                <div class="form-option-label" data-i18n="contact.form.step4.long">3-6 Months</div>
+              </div>
+
+              <div class="form-option-card" onclick="selectOption(this, 'exploring')">
+                <div class="form-option-icon">
+                  <i data-lucide="search"></i>
+                </div>
+                <div class="form-option-label" data-i18n="contact.form.step4.exploring">Exploring</div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <label class="form-input-label">
+              <span data-i18n="contact.form.step4.budget">Budget Range</span>
+              <span class="form-input-optional" data-i18n="contact.form.step4.optional">(optional)</span>
+            </label>
+            <select class="form-input" id="budget-range">
+              <option value="" data-i18n="contact.form.step4.selectBudget">Select a range</option>
+              <option value="5-10k">$5K-$10K</option>
+              <option value="10-25k">$10K-$25K</option>
+              <option value="25-50k">$25K-$50K</option>
+              <option value="50-100k">$50K-$100K</option>
+              <option value="100k+">$100K+</option>
+              <option value="undetermined" data-i18n="contact.form.step4.undetermined">Undetermined</option>
+            </select>
+          </div>
+
+          <div class="form-nav-buttons">
+            <button class="form-btn-back" onclick="prevStep(3)">
+              <i data-lucide="arrow-left"></i>
+              <span data-i18n="contact.form.back">Back</span>
+            </button>
+            <button class="form-btn-next" onclick="nextStep(5)" id="step4-next" disabled>
+              <span data-i18n="contact.form.continue">Continue</span>
+              <i data-lucide="arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 5: Contact Info -->
+        <div class="form-step" id="step-5">
+          <h2 class="form-step-title" data-i18n="contact.form.step5.title">Almost there! How can we reach you?</h2>
+          <p class="form-step-subtitle" data-i18n="contact.form.step5.subtitle">We'll use this information to get back to you</p>
+
+          <div>
+            <label class="form-input-label" for="contact-name">
+              <span data-i18n="contact.form.step5.name">Name</span> *
+            </label>
+            <input type="text" class="form-input" id="contact-name" placeholder="John Doe" required>
+          </div>
+
+          <div>
+            <label class="form-input-label" for="contact-email">
+              <span data-i18n="contact.form.step5.email">Email</span> *
+            </label>
+            <input type="email" class="form-input" id="contact-email" placeholder="john@company.com" required>
+          </div>
+
+          <div>
+            <label class="form-input-label" for="contact-phone">
+              <span data-i18n="contact.form.step5.phone">Phone</span>
+              <span class="form-input-optional" data-i18n="contact.form.step5.optional">(optional)</span>
+            </label>
+            <input type="tel" class="form-input" id="contact-phone" placeholder="+1 (555) 123-4567">
+          </div>
+
+          <div>
+            <label class="form-input-label" for="contact-company">
+              <span data-i18n="contact.form.step5.company">Company</span>
+              <span class="form-input-optional" data-i18n="contact.form.step5.optional">(optional)</span>
+            </label>
+            <input type="text" class="form-input" id="contact-company" placeholder="Acme Corp">
+          </div>
+
+          <div class="form-nav-buttons">
+            <button class="form-btn-back" onclick="prevStep(4)">
+              <i data-lucide="arrow-left"></i>
+              <span data-i18n="contact.form.back">Back</span>
+            </button>
+            <button class="form-btn-next" onclick="submitForm()" id="step5-next" disabled>
+              <span data-i18n="contact.form.submit">Submit Project Brief</span>
+              <i data-lucide="send"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Success Screen -->
+        <div class="success-screen" id="success-screen">
+          <div class="success-icon">
+            <i data-lucide="check-circle"></i>
+          </div>
+          <h2 class="success-title" data-i18n="contact.success.title">Brief Submitted!</h2>
+          <p class="success-message" data-i18n="contact.success.message">Thanks for sharing your project with us!</p>
+
+          <div class="success-steps">
+            <div class="success-step">
+              <div class="success-step-number">1</div>
+              <div class="success-step-content">
+                <div class="success-step-title" data-i18n="contact.success.step1.title">We'll review your brief</div>
+                <div class="success-step-description" data-i18n="contact.success.step1.desc">Within 24 hours</div>
+              </div>
+            </div>
+
+            <div class="success-step">
+              <div class="success-step-number">2</div>
+              <div class="success-step-content">
+                <div class="success-step-title" data-i18n="contact.success.step2.title">Schedule discovery call</div>
+                <div class="success-step-description" data-i18n="contact.success.step2.desc">With our team</div>
+              </div>
+            </div>
+
+            <div class="success-step">
+              <div class="success-step-number">3</div>
+              <div class="success-step-content">
+                <div class="success-step-title" data-i18n="contact.success.step3.title">Receive custom proposal</div>
+                <div class="success-step-description" data-i18n="contact.success.step3.desc">And project roadmap</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="success-email">
+            <span data-i18n="contact.success.confirmation">Confirmation sent to:</span> <strong id="confirmation-email"></strong>
+          </div>
+
+          <div class="success-actions">
+            <button class="contact-option-btn" onclick="window.location.reload()">
+              <i data-lucide="mail"></i>
+              <span>Send Another Message</span>
+            </button>
+            <a href="/" class="contact-option-btn" style="background: white; color: #6B46C1; border: 2px solid #6B46C1;">
+              <i data-lucide="home"></i>
+              <span data-i18n="contact.success.returnHome">Return to Home</span>
             </a>
           </div>
         </div>
       </div>
-    </div>
-    <div class="intro-header cc-subpage">
-      <div data-w-id="264bab75-3f62-9d17-e6b2-61607b9782d4" style="-webkit-transform:translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="intro-content">
-        <div class="heading-jumbo">Contact Us<br></div>
+
+      <!-- Quick Message Container (Hidden by default) -->
+      <div class="quick-message-container" id="quick-message-form">
+        <h2 class="quick-message-title" data-i18n="contact.quick.title">Send us a quick message</h2>
+        <p class="quick-message-subtitle" data-i18n="contact.quick.subtitle">We'll get back to you within 24 hours</p>
+
+        <div>
+          <label class="form-input-label" for="quick-name">
+            <span data-i18n="contact.form.step5.name">Name</span> *
+          </label>
+          <input type="text" class="form-input" id="quick-name" placeholder="John Doe" required>
+        </div>
+
+        <div>
+          <label class="form-input-label" for="quick-email">
+            <span data-i18n="contact.form.step5.email">Email</span> *
+          </label>
+          <input type="email" class="form-input" id="quick-email" placeholder="john@company.com" required>
+        </div>
+
+        <div>
+          <label class="form-input-label" for="quick-message">
+            <span data-i18n="contact.quick.message">Your Message</span> *
+          </label>
+          <textarea class="form-textarea" id="quick-message" placeholder="How can we help you?" required></textarea>
+        </div>
+
+        <div class="form-nav-buttons">
+          <button class="form-btn-back" onclick="hideQuickMessage()">
+            <i data-lucide="arrow-left"></i>
+            <span data-i18n="contact.form.back">Back to Options</span>
+          </button>
+          <button class="form-btn-next" onclick="submitQuickMessage()" id="quick-submit">
+            <span data-i18n="contact.quick.send">Send Message</span>
+            <i data-lucide="send"></i>
+          </button>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="section contact-us-forms">
-    <div class="div-block-9">
-      <div class="div-block-7">
-        <h1 data-w-id="a325c5c3-84d4-f52b-0d1b-68635555a9c8" style="-webkit-transform:translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="heading-4">Transforming Your <br>Business for the Better.</h1>
-      </div>
-      <div class="div-block-8">
-        <div class="form-block w-form">
-          <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form" data-wf-page-id="64b68ca345c2ac6152260659" data-wf-element-id="a3df0354-4203-09c5-83b4-b12fe52b4ba2"><input class="text-field-2 w-input" maxlength="256" name="name" data-name="Name" placeholder="First name*" type="text" id="name" required=""><input class="text-field-3 w-input" maxlength="256" name="Name" data-name="Name" placeholder="Last name*" type="text" id="Name-2" required=""><input class="text-field-2 w-input" maxlength="256" name="name-3" data-name="Name 3" placeholder="Company Name" type="text" id="name-3" required=""><input class="text-field-2 w-input" maxlength="256" name="name-3" data-name="Name 3" placeholder="Email" type="email" id="name-3" required=""><input class="text-field-2 w-input" maxlength="256" name="name-4" data-name="Name 4" placeholder="Website" type="text" id="name-4" required=""><input class="text-field-2 w-input" maxlength="256" name="name-4" data-name="Name 4" placeholder="Phone Number" type="tel" id="name-4" required=""><select id="Field-2" name="Field-2" data-name="Field 2" class="text-field-2 w-node-ea9094ae-ef8e-4c15-0de9-8df6e909c3e3-52260659 w-select">
-              <option value="Another option">Do you have a budget in mind?</option>
-              <option value="">$1,500 - $5,000</option>
-              <option value="First">$5,000 - $10,000</option>
-              <option value="Second">$10,000 - $15,000</option>
-              <option value="Third">$15,000 - $20,000</option>
-              <option value="Another option">$20,000 - $35,000</option>
-              <option value="Another option">$35,000 - $50,000</option>
-              <option value="Another option">$50,000 - $150,000</option>
-              <option value="Another option">$150,000+</option>
-              <option value="Another option">Undetermined</option>
-            </select><select id="Field-2" name="Field-2" data-name="Field 2" class="text-field-2 w-node-_7eed515c-3a81-b617-fb1b-0b3f733df418-52260659 w-select">
-              <option value="Another option">Project Needs</option>
-              <option value="">Inbounding Marketing</option>
-              <option value="First">E-commerce</option>
-              <option value="Second">Website Design</option>
-              <option value="Third">Digital Management</option>
-              <option value="Another option">Application Development</option>
-              <option value="Another option">Website Design &amp; Development</option>
-              <option value="Another option">Software Solutions</option>
-              <option value="Another option">Strategy       </option>
-              <option value="Another option">Other</option>
-            </select><select id="Field-2" name="Field-2" data-name="Field 2" class="text-field-2 w-node-_14ca8829-aa52-e984-635f-768d77b163fa-52260659 w-select">
-              <option value="Another option">How quickly do you plan to proceed</option>
-              <option value="">Immediately</option>
-              <option value="First">1 weeks</option>
-              <option value="Second">1 month</option>
-              <option value="Third">Within 6 months</option>
-              <option value="Another option">Undetermined</option>
-            </select><select id="Field-2" name="Field-2" data-name="Field 2" class="text-field-2 w-node-_7903d54c-1ec1-cb57-9801-c992bc97e8e4-52260659 w-select">
-              <option value="Another option">How did you hear about us?</option>
-              <option value="">Website</option>
-              <option value="First">Facebook</option>
-              <option value="Second">Referral</option>
-              <option value="Third">Google Search</option>
-              <option value="Another option">Friends </option>
-              <option value="Another option">Professional Contact</option>
-            </select>
-            <div id="w-node-_3becfbd0-a18e-cc13-4acb-e913ee4f994f-52260659" class="text-block-9">Your Message</div><textarea id="field" name="field" maxlength="5000" data-name="Field" placeholder="" class="textarea contact-us-textarea w-node-_53d33d40-c9de-7a2e-3caf-40e64e333d24-52260659 w-input"></textarea>
-            <div id="w-node-_72fc26f4-3178-3820-6d7b-5e0e25b6f7ce-52260659" class="text-block-10"><span id="charcount" class="charactercount">0</span> remaining characters</div><input type="submit" data-wait="Please wait..." id="submitButtonId" class="submit-button footer_button w-node-a3df0354-4203-09c5-83b4-b12fe52b4ba9-52260659 w-button" value="Submit">
-          </form>
-          <div class="success-message w-form-done">
-            <div class="text-block-26">Thank you! Your submission has been received!</div>
+
+      <!-- Alternative Contact Methods -->
+      <div class="alternative-contact">
+        <h3 class="alternative-contact-title" data-i18n="contact.alternative.title">Prefer a Different Way?</h3>
+        <div class="alternative-contact-grid">
+          <div class="alternative-contact-item">
+            <div class="alternative-icon-wrapper">
+              <i data-lucide="mail"></i>
+            </div>
+            <div class="alternative-contact-label" data-i18n="contact.alternative.email">Email Us</div>
+            <a href="mailto:support@kleverr.io" class="alternative-contact-value">support@kleverr.io</a>
           </div>
-          <div class="error-message w-form-fail">
-            <div class="text-block-27">Oops! Something went wrong while submitting the form.</div>
+
+          <div class="alternative-contact-item">
+            <div class="alternative-icon-wrapper">
+              <i data-lucide="phone"></i>
+            </div>
+            <div class="alternative-contact-label" data-i18n="contact.alternative.phone">Call Us</div>
+            <a href="tel:+13211234567" class="alternative-contact-value">+1 (321) 123-4567</a>
+          </div>
+
+          <div class="alternative-contact-item">
+            <div class="alternative-icon-wrapper">
+              <i data-lucide="message-circle"></i>
+            </div>
+            <div class="alternative-contact-label" data-i18n="contact.alternative.chat">Live Chat</div>
+            <span class="alternative-contact-value" data-i18n="contact.alternative.chatHours">9am-6pm EST</span>
+          </div>
+
+          <div class="alternative-contact-item">
+            <div class="alternative-icon-wrapper">
+              <i data-lucide="map-pin"></i>
+            </div>
+            <div class="alternative-contact-label" data-i18n="contact.alternative.locations">Our Locations</div>
+            <a href="/about#locations" class="alternative-contact-value" data-i18n="contact.alternative.viewLocations">View Locations</a>
           </div>
         </div>
       </div>
+
     </div>
   </div>
-  <div class="section contact-us-banner-two banner-two">
-    <div class="contact-div-two">
-      <div data-w-id="9b13908f-a84e-29e0-5a4b-a5463117a319" style="-webkit-transform:translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="div-block-10">
-        <div class="text-block-11">Find Us</div>
-        <ul role="list" class="list">
-          <li class="list-item">support@kleverr.io</li>
-          <li class="list-item-3 list-item">Rockledge, Florida</li>
-          <li class="list-item-2 list-item">Nassau, The Bahamas<br></li>
-          <li class="list-item-4 list-item">Santo Domingo, D.R.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <section class="footer-light">
-    <div class="footer-wrapper-two">
-      <div class="footer-brand">
-        <a href="index.html" class="w-inline-block"><img src="assets/images/Mask-group.svg" loading="lazy" alt="" class="image"></a>
-        <div class="text-block-3">Your business becomes our business, and we stand by your side as you navigate the peaks and troughs of <br>your journey.</div>
-        <div class="text-block-4">Locations:<br>Rockledge, Florida<br>Nassau, The Bahamas<br>Santo Domingo, D.R.<br>Email: support@kleverr.io</div>
-      </div>
-      <div class="footer-block-two">
-        <div class="footer-title">Company</div>
-        <a href="index.html" class="footer-link-two">Home</a>
-        <a href="about.html" class="footer-link-two">About</a>
-        <a href="services.html" class="footer-link-two">Services</a>
-        <a href="case-studies.html" class="footer-link-two">Case Studies</a>
-        <a href="contact.html" aria-current="page" class="footer-link-two w--current">Contact</a>
-        <a href="consultation.html" class="footer-link-two">Consultation</a>
-      </div>
-      <div class="footer-block-two">
-        <div class="footer-title">Services</div>
-        <a href="https://kleverr.webflow.io/services/digital-transformation" class="footer-link-two">Digital Transformation Strategy</a>
-        <a href="https://kleverr.webflow.io/services/business-system-planning" class="footer-link-two">Business System Planning</a>
-        <a href="https://kleverr.webflow.io/services/digital-inbound-marketing" class="footer-link-two">Digital Inbound Marketing</a>
-        <a href="https://kleverr.webflow.io/services/e-commerce" class="footer-link-two">E-Commerce</a>
-        <a href="https://kleverr.webflow.io/services/web-mobile-experiences" class="footer-link-two">Web &amp; Mobile Experiences</a>
-        <a href="https://kleverr.webflow.io/services/application-development" class="footer-link-two">Application Development</a>
-        <a href="https://kleverr.webflow.io/services/data-management" class="footer-link-two">Data Management</a>
-        <a href="https://kleverr.webflow.io/services/it-project-management" class="footer-link-two">IT Project Management</a>
-      </div>
-      <div class="footer-block-two footer-block-three">
-        <a href="https://kleverr.webflow.io/services/mobile-app-design" class="footer-link-two">Mobile App Design</a>
-        <a href="https://kleverr.webflow.io/services/software-management" class="footer-link-two">Software Management</a>
-        <a href="https://kleverr.webflow.io/services/it-managed-services" class="footer-link-two">IT Managed Services</a>
-      </div>
-      <div class="footer-form w-form">
-        <div class="footer-title footer_heading">Stay up-to-date<br>with news,trends &amp; insights.</div>
-        <form id="wf-form-Footer-Form" name="wf-form-Footer-Form" data-name="Footer Form" method="get" class="footer-form-container" data-wf-page-id="64b68ca345c2ac6152260659" data-wf-element-id="17f97273-d32a-ca53-6182-50fc3c1ec162">
-          <div class="footer-form-block"><input class="footer-form-field w-input" maxlength="256" name="Email-3" data-name="Email 3" aria-label="Get product updates" placeholder="Enter your email" type="email" id="Email-3" required=""></div><input type="submit" data-wait="Please wait..." class="button-2 footer_button w-button" value="Subscribe">
-        </form>
-        <div class="success-message-2 w-form-done">
-          <div class="text-block-29">Thank you! Your submission has been received!</div>
-        </div>
-        <div class="footer_icons">
-          <a href="https://www.facebook.com/Kleverrusa" target="_blank" class="footer-social-links w-inline-block"><img src="assets/images/facebook.svg" loading="lazy" alt=""></a>
-          <a href="https://www.instagram.com/kleverrusa/?fbclid=IwAR3AP8rmsuXkByQAzutE4yKYTfqo8Yv4zlPAdoUDnLUNDBRk6O3Fg8l6jHc" target="_blank" class="footer-social-links w-inline-block"><img src="assets/images/instagram.svg" loading="lazy" alt=""></a>
-          <a href="https://www.youtube.com/@Kleverrusa" target="_blank" class="footer-social-links w-inline-block"><img src="assets/images/Youtube.svg" loading="lazy" alt=""></a>
-          <a href="https://www.linkedin.com/company/kleverrusa/?viewAsMember=true" target="_blank" class="footer-social-links w-inline-block"><img src="assets/images/linkedin.svg" loading="lazy" alt=""></a>
-        </div>
-        <div class="error-message-2 w-form-fail">
-          <div class="text-block-32">Oops! Something went wrong while submitting the form.</div>
+
+  <!-- Footer -->
+  <section class="footer-light home2-footer kleverr-footer">
+    <div class="footer-wrapper-new">
+
+      <!-- Column 1: Brand + Contact (Accordion on Mobile) -->
+      <div class="footer-column footer-brand-column footer-accordion-section">
+        <a href="/" class="footer-logo w-inline-block">
+          <img src="assets/images/Mask-group_1.svg" loading="lazy" alt="Kleverr Logo" class="footer-logo-img">
+        </a>
+        <p class="footer-tagline" data-i18n="footer.tagline">Your business becomes our business, and we stand by your side as you navigate the peaks and troughs of your journey.</p>
+
+        <div class="footer-contact">
+          <h4 class="footer-section-title footer-accordion-header" data-i18n="footer.locations">
+            Locations:
+            <i data-lucide="chevron-down" class="footer-accordion-icon"></i>
+          </h4>
+          <div class="footer-accordion-content">
+            <p class="footer-location-list">
+              Rockledge, Florida<br>
+              Nassau, The Bahamas<br>
+              Santo Domingo, D.R.
+            </p>
+            <p class="footer-email">
+              <i data-lucide="mail" class="footer-icon"></i>
+              support@kleverr.io
+            </p>
+          </div>
         </div>
       </div>
+
+      <!-- Column 2: Company Links (Accordion on Mobile) -->
+      <div class="footer-column footer-links-column footer-accordion-section">
+        <h4 class="footer-section-title footer-accordion-header" data-i18n="footer.company">
+          Company
+          <i data-lucide="chevron-down" class="footer-accordion-icon"></i>
+        </h4>
+        <nav class="footer-nav footer-accordion-content">
+          <a href="/about" class="footer-link" data-i18n="nav.about">About</a>
+          <a href="/services" class="footer-link" data-i18n="nav.services">Services</a>
+          <a href="case-studies.html" class="footer-link" data-i18n="nav.caseStudies">Case Studies</a>
+          <a href="/contact" aria-current="page" class="footer-link w--current" data-i18n="nav.contact">Contact</a>
+          <a href="#" class="footer-link" data-i18n="footer.careers">Careers</a>
+        </nav>
+      </div>
+
+      <!-- Column 3: Get Started (Accordion on Mobile) -->
+      <div class="footer-column footer-cta-column footer-accordion-section">
+        <h4 class="footer-section-title footer-accordion-header" data-i18n="footer.getStarted">
+          Get Started
+          <i data-lucide="chevron-down" class="footer-accordion-icon"></i>
+        </h4>
+        <nav class="footer-nav footer-accordion-content">
+          <a href="/contact" class="footer-cta-link">
+            <i data-lucide="calendar-check" class="footer-icon-inline"></i>
+            <span data-i18n="footer.freeConsultation">Free Consultation</span>
+          </a>
+          <a href="case-studies.html" class="footer-cta-link">
+            <i data-lucide="briefcase" class="footer-icon-inline"></i>
+            <span data-i18n="footer.viewProjects">View Projects</span>
+          </a>
+          <a href="/contact" class="footer-cta-link">
+            <i data-lucide="handshake" class="footer-icon-inline"></i>
+            <span data-i18n="footer.partnerWithUs">Partner With Us</span>
+          </a>
+        </nav>
+      </div>
+
     </div>
-    <div class="div-block-2">
-      <div class="div-block-3">
-        <a href="privacy-policy.html" class="footer_link_1">Terms and Conditions |</a>
-        <a href="privacy-policy.html" class="footer_link_1 footer_link_2">Privacy Policy</a>
+
+    <!-- Footer Bottom: Legal Links -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-container">
+        <div class="footer-bottom-left">
+          <div class="footer-social-minimal">
+            <a href="https://www.linkedin.com/company/kleverrusa/" target="_blank" rel="noopener" class="social-icon-minimal" aria-label="LinkedIn">
+              <i data-lucide="linkedin"></i>
+            </a>
+            <a href="https://twitter.com/kleverrusa" target="_blank" rel="noopener" class="social-icon-minimal" aria-label="X">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+          </div>
+          <p class="footer-copyright" data-i18n="footer.copyright">© 2025 Kleverr. All rights reserved.</p>
+        </div>
+        <div class="footer-legal-links">
+          <a href="/privacy-policy" class="footer-legal-link" data-i18n="footer.termsConditions">Terms & Conditions</a>
+          <span class="footer-separator">•</span>
+          <a href="/privacy-policy" class="footer-legal-link" data-i18n="footer.privacyPolicy">Privacy Policy</a>
+        </div>
       </div>
     </div>
-    <div class="container-2"></div>
   </section>
-  <address class="footer-light footer_two">
-    <div data-w-id="48909e81-30cd-0472-3ba8-dc1f4ef29e10" class="footer-wrapper-two">
-      <div class="footer-brand">
-        <a href="index.html" class="w-inline-block"><img src="assets/images/Mask-group.svg" loading="lazy" alt="" class="image"></a>
-        <div class="text-block-3">At Kleverr, we offer a range of digital solutions tailored to the specific needs of health and tourism businesses. Our expertise in digital technologies,</div>
+
+  <!-- Cal.com Scheduling Modal -->
+  <div id="schedule-modal" class="schedule-modal-overlay">
+    <div class="schedule-modal">
+      <div class="schedule-modal-header">
+        <h2>Schedule Your Strategy Call</h2>
+        <p>Choose a time that works best for you</p>
+        <div class="schedule-modal-close" onclick="closeScheduleModal()">
+          <i data-lucide="x"></i>
+        </div>
       </div>
-      <div class="footer_icons">
-        <a href="https://www.facebook.com/Kleverrusa" target="_blank" class="footer-social-links w-inline-block"><img src="assets/images/facebook.svg" loading="lazy" alt=""></a>
-        <a href="https://www.instagram.com/kleverrusa/?fbclid=IwAR3AP8rmsuXkByQAzutE4yKYTfqo8Yv4zlPAdoUDnLUNDBRk6O3Fg8l6jHc" target="_blank" class="footer-social-links w-inline-block"><img src="assets/images/instagram.svg" loading="lazy" alt=""></a>
-        <a href="https://www.youtube.com/@Kleverrusa" target="_blank" class="footer-social-links w-inline-block"><img src="assets/images/Youtube.svg" loading="lazy" alt=""></a>
-        <a href="https://www.linkedin.com/company/kleverrusa/?viewAsMember=true" target="_blank" class="footer-social-links w-inline-block"><img src="assets/images/linkedin.svg" loading="lazy" alt=""></a>
-      </div>
-      <div class="footer-form w-form">
-        <form id="wf-form-Footer-Form" name="wf-form-Footer-Form" data-name="Footer Form" method="get" class="footer-form-container" data-wf-page-id="64b68ca345c2ac6152260659" data-wf-element-id="48909e81-30cd-0472-3ba8-dc1f4ef29e21">
-          <div class="footer-title footer_heading">Stay up-to-date<br>with news,trends &amp; insights.</div>
-          <div class="footer-form-block"><input class="footer-form-field w-input" maxlength="256" name="Email-2" data-name="Email 2" aria-label="Get product updates" placeholder="Enter your email" type="email" id="Email-2" required=""></div><input type="submit" data-wait="Please wait..." class="button-2 footer_button footer_btn_responsive w-button" value="Subscribe">
-        </form>
-        <div class="w-form-done">
-          <div>Thank you! Your submission has been received!</div>
-        </div>
-        <div class="w-form-fail">
-          <div>Oops! Something went wrong while submitting the form.</div>
-        </div>
-        <div class="div-block-42">
-          <div data-w-id="590d28f6-87bf-568d-a6c6-d5f6e875fd6e" class="footer-block-two">
-            <div class="footer-title">Company</div>
-            <a href="index.html" class="footer-link-two">Home</a>
-            <a href="about.html" class="footer-link-two">About</a>
-            <a href="services.html" class="footer-link-two">Services</a>
-            <a href="styleguide.html" class="footer-link-two">Industries</a>
-            <a href="case-studies.html" class="footer-link-two">Case Studies</a>
-            <a href="case-studies.html" class="footer-link-two">Resources</a>
-            <a href="projects.html" class="footer-link-two">Testimonials</a>
-            <a href="contact.html" aria-current="page" class="footer-link-two w--current">Contact</a>
-            <a href="consultation.html" class="footer-link-two">Consultation</a>
-          </div>
-          <div class="footer-block-two">
-            <div class="footer-title">Services</div>
-            <a href="https://kleverr.webflow.io/services/digital-transformation-strategy" class="footer-link-two">Digital Transformation Strategy</a>
-            <a href="https://kleverr.webflow.io/services/business-system-planning" class="footer-link-two">Business System Planning</a>
-            <a href="https://kleverr.webflow.io/services/digital-inbound-marketing" class="footer-link-two">Digital Inbound Marketing</a>
-            <a href="https://kleverr.webflow.io/services/e-commerce" class="footer-link-two">E-Commerce</a>
-            <a href="https://kleverr.webflow.io/services/web-mobile-experiences" class="footer-link-two">Web &amp; Mobile Experiences</a>
-            <a href="https://kleverr.webflow.io/services/application-development" class="footer-link-two">Application Development</a>
-            <a href="https://kleverr.webflow.io/services/customer-relationship-management" class="footer-link-two">Customer Relationship Management</a>
-            <a href="https://kleverr.webflow.io/services/it-project-management" class="footer-link-two">IT Project Management</a>
-            <a href="https://kleverr.webflow.io/services/mobile-app-design" class="footer-link-two">Mobile App Design</a>
-            <a href="https://kleverr.webflow.io/services/social-media-management" class="footer-link-two">Social Media Management</a>
-            <a href="https://kleverr.webflow.io/services/software-development" class="footer-link-two">Software Development</a>
-            <a href="https://kleverr.webflow.io/services/managed-services" class="footer-link-two">Managed Services</a>
-          </div>
-        </div>
+      <div class="schedule-modal-body">
+        <iframe id="cal-embed" src="" allow="camera; microphone; autoplay; display-capture"></iframe>
       </div>
     </div>
-    <div data-w-id="48909e81-30cd-0472-3ba8-dc1f4ef29e63" class="div-block-2">
-      <div class="text-block-4">B. Amsterdam B3Johan Huizingalaan<br> 4001066 JS AmsterdamThe<br> Netherlands<br>Phone: 69305315</div>
-      <div class="div-block-41">
-        <div class="text-block-5">© 2023<a href="https://kleverr.webflow.io/" class="link-2"> Kleverr |</a>made with <a href="https://extrasol.co.uk/" class="link"></a>
-        </div><img src="assets/images/icons8-heart.gif" loading="lazy" alt="" class="heart-svg">
-        <div class="text-block-5">by <a href="https://extrasol.co.uk/" target="_blank" class="link-2">Extrasol</a>
-        </div>
-      </div>
-      <div class="div-block-3">
-        <a href="privacy-policy.html" class="footer_link_1">Terms and Conditions |</a>
-        <a href="privacy-policy.html" class="footer_link_1 footer_link_2">Privacy Policy</a>
-      </div>
-    </div>
-    <div class="container-2"></div>
-  </address>
-  <div class="section cc-cta"></div>
+  </div>
+
+  <!-- Scripts -->
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64b68ca245c2ac61522605c9" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
   <script src="assets/js/webflow.js" type="text/javascript"></script>
+  <script src="assets/js/i18next.min.js" type="text/javascript"></script>
+  <script src="assets/js/multilingual.js" type="text/javascript"></script>
+  <script src="assets/js/footer-accordion.js" type="text/javascript"></script>
   <script>
-// Pass form input values through to the success state of the form
-// When a user clicks on the submit button run this function
-$('#submitButtonId').click(function() {
-		// set a variable of name that is equal to the name field
-    let formName = $('#name').val();
-    // find the span in the success state with an id of namesuccess and write the value that was in the name field
-    $('#namesuccess').html(formName);
-});
-// Show the number of characters remaining
-// When the document is ready to execute code
-$(document).ready(function() {
-  // Set the max number of characters
-  let textMax = 320;
-  // Write the max number of characters to the element witn an id of #charcount
-  $('#charcount').html(textMax);
-  // When someone types into the input with an id of #title
-  $('#field').keyup(function() {
-      // Set a variable of texTLength to the length of the input with an id of #idea
-      let textLength = $('#field').val().length;
-      // Set a variable that is the max length of text - the current length
-      let textRemaining = textMax - textLength;
-      // Write the number of characters remaining to the #charcount element
-      $('#charcount').html(textRemaining);
-      // Set a backgroundColor variable 
-      let backgroundColor = "#38d996";
-      // if the text is less than or equal to 5 characters set a warning color
-      if (textRemaining <= 20) {
-          backgroundColor = "#ff6382";
-      } 
-      // else if the count is equal to 40 reminaing or lower set a caution color
-      else if (textRemaining <= 100) {
-      backgroundColor = "#ffab9d";
-}
-      // Set the background color of the element with an id of charbox based on the rules above
-      document.getElementById('charbox').style.backgroundColor = backgroundColor;
-  });
-});
-</script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Form data storage
+    const formData = {
+      projectType: null,
+      solutions: [],
+      description: '',
+      timeline: null,
+      budget: null,
+      name: '',
+      email: '',
+      phone: '',
+      company: ''
+    };
+
+    // Show/Hide forms
+    function showProjectBrief() {
+      document.getElementById('contact-options-grid').style.display = 'none';
+      document.getElementById('progressive-form').classList.add('active');
+      updateProgress(20);
+    }
+
+    function hideProjectBrief() {
+      document.getElementById('progressive-form').classList.remove('active');
+      document.getElementById('contact-options-grid').style.display = 'grid';
+      resetForm();
+    }
+
+    function showQuickMessage() {
+      document.getElementById('contact-options-grid').style.display = 'none';
+      document.getElementById('quick-message-form').classList.add('active');
+    }
+
+    function hideQuickMessage() {
+      document.getElementById('quick-message-form').classList.remove('active');
+      document.getElementById('contact-options-grid').style.display = 'grid';
+    }
+
+    function showScheduleCall() {
+      const modal = document.getElementById('schedule-modal');
+      const iframe = document.getElementById('cal-embed');
+
+      // Set the Cal.com embed URL with theme customization
+      iframe.src = 'https://cal.com/kleverr/30min?embed=true&theme=light';
+
+      // Show modal
+      modal.classList.add('active');
+
+      // Prevent body scroll
+      document.body.style.overflow = 'hidden';
+
+      // Reinitialize icons for the close button
+      lucide.createIcons();
+    }
+
+    function closeScheduleModal() {
+      const modal = document.getElementById('schedule-modal');
+      const iframe = document.getElementById('cal-embed');
+
+      // Hide modal
+      modal.classList.remove('active');
+
+      // Clear iframe src to stop any ongoing processes
+      iframe.src = '';
+
+      // Re-enable body scroll
+      document.body.style.overflow = '';
+    }
+
+    // Close modal when clicking outside
+    document.addEventListener('DOMContentLoaded', function() {
+      const modal = document.getElementById('schedule-modal');
+      modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+          closeScheduleModal();
+        }
+      });
+
+      // Close modal with Escape key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+          closeScheduleModal();
+        }
+      });
+    });
+
+    // Form navigation
+    function nextStep(stepNumber) {
+      const currentStep = document.querySelector('.form-step.active');
+      const nextStep = document.getElementById(`step-${stepNumber}`);
+
+      currentStep.classList.remove('active');
+      nextStep.classList.add('active');
+
+      updateProgress(stepNumber * 20);
+      lucide.createIcons();
+    }
+
+    function prevStep(stepNumber) {
+      const currentStep = document.querySelector('.form-step.active');
+      const prevStep = document.getElementById(`step-${stepNumber}`);
+
+      currentStep.classList.remove('active');
+      prevStep.classList.add('active');
+
+      updateProgress(stepNumber * 20);
+      lucide.createIcons();
+    }
+
+    function updateProgress(percentage) {
+      document.getElementById('progress-fill').style.width = percentage + '%';
+    }
+
+    // Select option (radio)
+    function selectOption(element, value) {
+      const parent = element.closest('.form-options-grid');
+      parent.querySelectorAll('.form-option-card').forEach(card => {
+        card.classList.remove('selected');
+      });
+      element.classList.add('selected');
+
+      const stepId = element.closest('.form-step').id;
+      const stepNumber = stepId.replace('step-', '');
+      const nextButton = document.getElementById(`step${stepNumber}-next`);
+
+      if (stepNumber === '1') {
+        formData.projectType = value;
+        nextButton.disabled = false;
+      } else if (stepNumber === '4') {
+        formData.timeline = value;
+        nextButton.disabled = false;
+      }
+    }
+
+    // Toggle checkbox
+    function toggleCheckbox(element, value) {
+      const checkbox = element.querySelector('input[type="checkbox"]');
+      checkbox.checked = !checkbox.checked;
+
+      if (checkbox.checked) {
+        element.classList.add('selected');
+        formData.solutions.push(value);
+      } else {
+        element.classList.remove('selected');
+        formData.solutions = formData.solutions.filter(s => s !== value);
+      }
+    }
+
+    // Monitor contact info fields
+    const nameInput = document.getElementById('contact-name');
+    const emailInput = document.getElementById('contact-email');
+
+    function checkContactFields() {
+      const name = nameInput.value.trim();
+      const email = emailInput.value.trim();
+      const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+      document.getElementById('step5-next').disabled = !(name && emailValid);
+    }
+
+    nameInput.addEventListener('input', checkContactFields);
+    emailInput.addEventListener('input', checkContactFields);
+
+    // Submit form
+    function submitForm() {
+      formData.description = document.getElementById('project-description').value;
+      formData.budget = document.getElementById('budget-range').value;
+      formData.name = document.getElementById('contact-name').value;
+      formData.email = document.getElementById('contact-email').value;
+      formData.phone = document.getElementById('contact-phone').value;
+      formData.company = document.getElementById('contact-company').value;
+
+      console.log('Form submitted:', formData);
+
+      // Show success screen
+      document.getElementById('step-5').classList.remove('active');
+      document.getElementById('success-screen').classList.add('active');
+      document.getElementById('confirmation-email').textContent = formData.email;
+      updateProgress(100);
+      lucide.createIcons();
+
+      // Here you would send the data to your backend
+      // Example: fetch('/api/contact', { method: 'POST', body: JSON.stringify(formData) })
+    }
+
+    // Submit quick message
+    function submitQuickMessage() {
+      const name = document.getElementById('quick-name').value;
+      const email = document.getElementById('quick-email').value;
+      const message = document.getElementById('quick-message').value;
+
+      console.log('Quick message submitted:', { name, email, message });
+
+      // Show success message
+      alert('Thank you! Your message has been sent. We\'ll get back to you within 24 hours.');
+      hideQuickMessage();
+
+      // Here you would send the data to your backend
+    }
+
+    // Reset form
+    function resetForm() {
+      formData.projectType = null;
+      formData.solutions = [];
+      formData.description = '';
+      formData.timeline = null;
+      formData.budget = null;
+      formData.name = '';
+      formData.email = '';
+      formData.phone = '';
+      formData.company = '';
+
+      document.querySelectorAll('.form-option-card').forEach(card => card.classList.remove('selected'));
+      document.querySelectorAll('.form-checkbox-item').forEach(item => {
+        item.classList.remove('selected');
+        item.querySelector('input').checked = false;
+      });
+
+      document.getElementById('project-description').value = '';
+      document.getElementById('budget-range').value = '';
+      document.getElementById('contact-name').value = '';
+      document.getElementById('contact-email').value = '';
+      document.getElementById('contact-phone').value = '';
+      document.getElementById('contact-company').value = '';
+
+      document.getElementById('step-1').classList.add('active');
+      document.querySelectorAll('.form-step:not(#step-1)').forEach(step => step.classList.remove('active'));
+      document.getElementById('success-screen').classList.remove('active');
+
+      updateProgress(20);
+    }
+  </script>
 </body>
 </html>

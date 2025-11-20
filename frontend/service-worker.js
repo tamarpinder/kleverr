@@ -12,7 +12,6 @@ const STATIC_FILES = [
   '/about.html',
   '/services.html',
   '/contact.html',
-  '/consultation.html',
   '/insights.html',
   '/assets/css/normalize.css',
   '/assets/css/webflow.css',
@@ -76,7 +75,7 @@ self.addEventListener('fetch', (event) => {
   }
 
   // Network-first strategy for HTML pages (always get latest version)
-  if (request.destination === 'document' || url.pathname.endsWith('.html') || url.pathname === '/' || url.pathname.match(/^\/(about|services|contact|insights|consultation)$/)) {
+  if (request.destination === 'document' || url.pathname.endsWith('.html') || url.pathname === '/' || url.pathname.match(/^\/(about|services|contact|insights|case-studies)$/)) {
     event.respondWith(
       fetch(request)
         .then((response) => {
