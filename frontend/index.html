@@ -434,182 +434,229 @@
   </section>
   <!-- Removed duplicate IT Services section - all services now shown above -->
 
-  <!-- 🎯 SUCCESS STORIES / PORTFOLIO SECTION -->
-  <section class="portfolio-section">
-    <div class="portfolio-container">
-      <div class="portfolio-header">
-        <h2 class="portfolio-title" data-i18n="sections.successStories">Success Stories That Inspire</h2>
-        <p class="portfolio-subtitle" data-i18n="sections.successStoriesDesc">Discover how we've transformed businesses across industries with innovative technology solutions.</p>
+  <!-- 🎯 SUCCESS STORIES CAROUSEL - CSS SCROLL SNAP -->
+  <section class="success-stories-section">
+    <div class="success-stories-container">
+
+      <!-- Section Header -->
+      <div class="success-stories-header">
+        <h2 class="success-stories-title" data-i18n="sections.successStories">Success Stories That Inspire</h2>
+        <p class="success-stories-subtitle" data-i18n="sections.successStoriesDesc">Real impact. Real results. Discover how we've transformed businesses across industries.</p>
       </div>
 
-      <!-- Projects Grid -->
-      <div class="projects-grid">
+      <!-- Horizontal Scroll Container with Floating Arrows -->
+      <div class="success-stories-carousel" id="successCarousel">
 
         <!-- Project 1: Healthcare -->
-        <div class="project-card">
-          <div class="project-image">
-            <img src="assets/images/projects/healthcare-project.jpg" alt="Hospital Network Management System" loading="lazy">
-            <div class="project-overlay">
-              <span class="industry-badge healthcare">Healthcare</span>
+        <div class="story-card">
+          <div class="story-header">
+            <div class="client-info">
+              <div class="industry-tag healthcare">
+                <i data-lucide="heart-pulse"></i>
+                <span>Healthcare</span>
+              </div>
+              <h3 class="client-name">Major Hospital Network</h3>
             </div>
           </div>
-          <div class="project-info">
-            <h3 class="project-name" data-i18n="projects.healthcare.title">Hospital Network Transformation</h3>
-            <p class="project-description" data-i18n="projects.healthcare.description">AI-powered patient management system reducing wait times by 60% across 15 facilities.</p>
-            <div class="project-metrics">
-              <span class="metric">60% Faster</span>
-              <span class="metric">15 Facilities</span>
+
+          <div class="story-visual">
+            <img src="assets/images/projects/healthcare-project.jpg" alt="Hospital Network Transformation" loading="lazy">
+            <div class="visual-overlay">
+              <div class="stats-badge">
+                <i data-lucide="trending-up"></i>
+                <span>60% Improvement</span>
+              </div>
             </div>
-            <div class="tech-stack">
-              <i data-lucide="code" class="tech-icon"></i>
-              <span>React • Node.js • PostgreSQL</span>
+          </div>
+
+          <div class="story-content">
+            <h4 class="story-title">AI-Powered Patient Management Revolution</h4>
+            <p class="story-description">"Kleverr transformed our entire patient management system with cutting-edge AI technology. Wait times dropped by 60%, patient satisfaction soared, and our staff can finally focus on what matters most—care."</p>
+
+            <div class="tech-stack-pills">
+              <span class="tech-pill">React</span>
+              <span class="tech-pill">Node.js</span>
+              <span class="tech-pill">PostgreSQL</span>
+              <span class="tech-pill">AI/ML</span>
             </div>
-            <a href="https://healthcare-demo.kleverr.vercel.app" target="_blank" rel="noopener" class="view-project-btn">
-              <span data-i18n="cta.viewProject">View Project</span>
+          </div>
+
+          <div class="story-actions">
+            <a href="case-studies.html" class="story-cta primary">
+              <span>View Full Case Study</span>
               <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="contact.html#schedule" class="story-cta secondary">
+              <span>Book Discovery Call</span>
+              <i data-lucide="calendar-check"></i>
             </a>
           </div>
         </div>
 
         <!-- Project 2: E-Commerce -->
-        <div class="project-card">
-          <div class="project-image">
-            <img src="assets/images/projects/ecommerce-project.jpg" alt="E-Commerce Platform" loading="lazy">
-            <div class="project-overlay">
-              <span class="industry-badge ecommerce">E-Commerce</span>
+        <div class="story-card">
+          <div class="story-header">
+            <div class="client-info">
+              <div class="industry-tag ecommerce">
+                <i data-lucide="shopping-cart"></i>
+                <span>E-Commerce</span>
+              </div>
+              <h3 class="client-name">National Retail Chain</h3>
             </div>
           </div>
-          <div class="project-info">
-            <h3 class="project-name" data-i18n="projects.ecommerce.title">Retail Digital Revolution</h3>
-            <p class="project-description" data-i18n="projects.ecommerce.description">Custom e-commerce platform with AI personalization increasing conversions by 250%.</p>
-            <div class="project-metrics">
-              <span class="metric">250% Growth</span>
-              <span class="metric">$50M Revenue</span>
+
+          <div class="story-visual">
+            <img src="assets/images/projects/ecommerce-project.jpg" alt="Retail Digital Revolution" loading="lazy">
+            <div class="visual-overlay">
+              <div class="stats-badge">
+                <i data-lucide="trending-up"></i>
+                <span>250% Growth</span>
+              </div>
             </div>
-            <div class="tech-stack">
-              <i data-lucide="shopping-cart" class="tech-icon"></i>
-              <span>Next.js • Stripe • MongoDB</span>
+          </div>
+
+          <div class="story-content">
+            <h4 class="story-title">AI-Driven E-Commerce Transformation</h4>
+            <p class="story-description">"The custom platform Kleverr built exceeded all expectations. AI-powered personalization drove a 250% increase in conversions, and we hit $50M in revenue within the first year. Incredible results."</p>
+
+            <div class="tech-stack-pills">
+              <span class="tech-pill">Next.js</span>
+              <span class="tech-pill">Stripe</span>
+              <span class="tech-pill">MongoDB</span>
+              <span class="tech-pill">AI Personalization</span>
             </div>
-            <a href="https://ecommerce-demo.kleverr.vercel.app" target="_blank" rel="noopener" class="view-project-btn">
-              <span data-i18n="cta.viewProject">View Project</span>
+          </div>
+
+          <div class="story-actions">
+            <a href="case-studies.html" class="story-cta primary">
+              <span>View Full Case Study</span>
               <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="contact.html#schedule" class="story-cta secondary">
+              <span>Book Discovery Call</span>
+              <i data-lucide="calendar-check"></i>
             </a>
           </div>
         </div>
 
         <!-- Project 3: Finance -->
-        <div class="project-card">
-          <div class="project-image">
-            <img src="assets/images/projects/finance-project.jpg" alt="Banking Security System" loading="lazy">
-            <div class="project-overlay">
-              <span class="industry-badge finance">Finance</span>
+        <div class="story-card">
+          <div class="story-header">
+            <div class="client-info">
+              <div class="industry-tag finance">
+                <i data-lucide="shield-check"></i>
+                <span>Financial Services</span>
+              </div>
+              <h3 class="client-name">Regional Banking Group</h3>
             </div>
           </div>
-          <div class="project-info">
-            <h3 class="project-name" data-i18n="projects.finance.title">Banking Security Revolution</h3>
-            <p class="project-description" data-i18n="projects.finance.description">AI-powered fraud detection preventing $100M+ in losses with 99.9% accuracy.</p>
-            <div class="project-metrics">
-              <span class="metric">99.9% Accurate</span>
-              <span class="metric">$100M Protected</span>
+
+          <div class="story-visual">
+            <img src="assets/images/projects/finance-project.jpg" alt="Banking Security Revolution" loading="lazy">
+            <div class="visual-overlay">
+              <div class="stats-badge">
+                <i data-lucide="shield-alert"></i>
+                <span>$100M Protected</span>
+              </div>
             </div>
-            <div class="tech-stack">
-              <i data-lucide="shield-check" class="tech-icon"></i>
-              <span>Python • TensorFlow • AWS</span>
+          </div>
+
+          <div class="story-content">
+            <h4 class="story-title">AI-Powered Fraud Prevention System</h4>
+            <p class="story-description">"Security is everything in banking. Kleverr's AI-powered fraud detection system has prevented over $100M in losses with 99.9% accuracy. Our customers trust us more than ever, and our fraud team can focus on sophisticated threats."</p>
+
+            <div class="tech-stack-pills">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">TensorFlow</span>
+              <span class="tech-pill">AWS</span>
+              <span class="tech-pill">Real-time ML</span>
             </div>
-            <a href="https://fraud-detection.kleverr.vercel.app" target="_blank" rel="noopener" class="view-project-btn">
-              <span data-i18n="cta.viewProject">View Project</span>
+          </div>
+
+          <div class="story-actions">
+            <a href="case-studies.html" class="story-cta primary">
+              <span>View Full Case Study</span>
               <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="contact.html#schedule" class="story-cta secondary">
+              <span>Book Discovery Call</span>
+              <i data-lucide="calendar-check"></i>
             </a>
           </div>
         </div>
 
-        <!-- Project 4: Education (Placeholder) -->
-        <div class="project-card">
-          <div class="project-image">
+        <!-- Project 4: Education -->
+        <div class="story-card">
+          <div class="story-header">
+            <div class="client-info">
+              <div class="industry-tag education">
+                <i data-lucide="graduation-cap"></i>
+                <span>Education</span>
+              </div>
+              <h3 class="client-name">University Learning Platform</h3>
+            </div>
+          </div>
+
+          <div class="story-visual">
             <img src="assets/images/projects/education-project.jpg" alt="Learning Management Platform" loading="lazy">
-            <div class="project-overlay">
-              <span class="industry-badge education">Education</span>
+            <div class="visual-overlay">
+              <div class="stats-badge">
+                <i data-lucide="users"></i>
+                <span>10K+ Students</span>
+              </div>
             </div>
           </div>
-          <div class="project-info">
-            <h3 class="project-name">Learning Management Platform</h3>
-            <p class="project-description">Comprehensive LMS serving 10,000+ students with real-time collaboration and AI tutoring.</p>
-            <div class="project-metrics">
-              <span class="metric">10K+ Students</span>
-              <span class="metric">95% Satisfaction</span>
+
+          <div class="story-content">
+            <h4 class="story-title">Next-Gen Learning Management System</h4>
+            <p class="story-description">"The LMS platform Kleverr developed revolutionized our approach to online education. With real-time collaboration, AI tutoring, and seamless video integration, student engagement increased 40% and satisfaction scores hit 95%."</p>
+
+            <div class="tech-stack-pills">
+              <span class="tech-pill">Vue.js</span>
+              <span class="tech-pill">Firebase</span>
+              <span class="tech-pill">WebRTC</span>
+              <span class="tech-pill">AI Tutoring</span>
             </div>
-            <div class="tech-stack">
-              <i data-lucide="graduation-cap" class="tech-icon"></i>
-              <span>Vue.js • Firebase • WebRTC</span>
-            </div>
-            <a href="https://education-demo.kleverr.vercel.app" target="_blank" rel="noopener" class="view-project-btn">
-              <span data-i18n="cta.viewProject">View Project</span>
+          </div>
+
+          <div class="story-actions">
+            <a href="case-studies.html" class="story-cta primary">
+              <span>View Full Case Study</span>
               <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="contact.html#schedule" class="story-cta secondary">
+              <span>Book Discovery Call</span>
+              <i data-lucide="calendar-check"></i>
             </a>
           </div>
         </div>
 
-        <!-- Project 5: Real Estate (Placeholder) -->
-        <div class="project-card">
-          <div class="project-image">
-            <img src="assets/images/projects/realestate-project.jpg" alt="Real Estate Platform" loading="lazy">
-            <div class="project-overlay">
-              <span class="industry-badge realestate">Real Estate</span>
-            </div>
-          </div>
-          <div class="project-info">
-            <h3 class="project-name">Property Management System</h3>
-            <p class="project-description">Modern property listing platform with virtual tours and AI-powered recommendations.</p>
-            <div class="project-metrics">
-              <span class="metric">5K+ Listings</span>
-              <span class="metric">2M Monthly Views</span>
-            </div>
-            <div class="tech-stack">
-              <i data-lucide="home" class="tech-icon"></i>
-              <span>React • Mapbox • GraphQL</span>
-            </div>
-            <a href="https://realestate-demo.kleverr.vercel.app" target="_blank" rel="noopener" class="view-project-btn">
-              <span data-i18n="cta.viewProject">View Project</span>
-              <i data-lucide="arrow-right"></i>
-            </a>
-          </div>
-        </div>
+      </div>
 
-        <!-- Project 6: Hospitality (Placeholder) -->
-        <div class="project-card">
-          <div class="project-image">
-            <img src="assets/images/projects/hospitality-project.jpg" alt="Hotel Booking System" loading="lazy">
-            <div class="project-overlay">
-              <span class="industry-badge hospitality">Hospitality</span>
-            </div>
-          </div>
-          <div class="project-info">
-            <h3 class="project-name">Hotel Booking Platform</h3>
-            <p class="project-description">Integrated reservation system with dynamic pricing and guest experience management.</p>
-            <div class="project-metrics">
-              <span class="metric">200+ Hotels</span>
-              <span class="metric">40% More Bookings</span>
-            </div>
-            <div class="tech-stack">
-              <i data-lucide="building" class="tech-icon"></i>
-              <span>Angular • .NET • SQL Server</span>
-            </div>
-            <a href="https://hospitality-demo.kleverr.vercel.app" target="_blank" rel="noopener" class="view-project-btn">
-              <span data-i18n="cta.viewProject">View Project</span>
-              <i data-lucide="arrow-right"></i>
-            </a>
-          </div>
-        </div>
+      <!-- Floating Navigation Arrows -->
+      <button class="carousel-floating-arrow prev-arrow" aria-label="Previous project" id="prevProject">
+        <i data-lucide="chevron-left"></i>
+      </button>
+      <button class="carousel-floating-arrow next-arrow" aria-label="Next project" id="nextProject">
+        <i data-lucide="chevron-right"></i>
+      </button>
 
+      <!-- Dot Indicators -->
+      <div class="carousel-dots" id="carouselDots">
+        <button class="dot active" data-slide="0" aria-label="Go to project 1"></button>
+        <button class="dot" data-slide="1" aria-label="Go to project 2"></button>
+        <button class="dot" data-slide="2" aria-label="Go to project 3"></button>
+        <button class="dot" data-slide="3" aria-label="Go to project 4"></button>
       </div>
 
       <!-- View All Projects CTA -->
-      <div class="portfolio-footer">
-        <a href="case-studies.html" class="portfolio-cta">
-          <span data-i18n="cta.viewAllProjects">View All Projects</span>
+      <div class="carousel-footer">
+        <a href="case-studies.html" class="view-all-projects-btn">
+          <span data-i18n="cta.viewAllProjects">View All Case Studies</span>
           <i data-lucide="arrow-right"></i>
         </a>
       </div>
+
     </div>
   </section>
 
@@ -736,6 +783,7 @@
   <script src="https://unpkg.com/lucide@latest"></script>
   <script src="assets/js/webflow.js" type="text/javascript"></script>
   <script src="assets/js/ai-features.js" type="text/javascript"></script>
+  <script src="assets/js/success-carousel.js" type="text/javascript"></script>
   <script src="assets/js/i18next.min.js" type="text/javascript"></script>
   <script src="assets/js/multilingual.js" type="text/javascript"></script>
   <script src="assets/js/footer-accordion.js" type="text/javascript"></script>

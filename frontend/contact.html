@@ -1670,6 +1670,41 @@ div.navbar-no-shadow,
           closeScheduleModal();
         }
       });
+
+      // Auto-open schedule modal if #schedule hash is present
+      function checkAndOpenSchedule() {
+        const hash = window.location.hash;
+        console.log('Current hash:', hash); // Debug log
+
+        if (hash === '#schedule') {
+          console.log('Opening schedule modal...'); // Debug log
+
+          // Wait for page transition loader to hide
+          const loader = document.querySelector('.quantum-loader');
+          const waitForLoaderHide = () => {
+            if (!loader || !loader.classList.contains('active')) {
+              // Loader is hidden, safe to open modal
+              showScheduleCall();
+              // Remove hash from URL without triggering navigation
+              history.replaceState(null, null, window.location.pathname);
+            } else {
+              // Loader still visible, check again in 100ms
+              setTimeout(waitForLoaderHide, 100);
+            }
+          };
+
+          waitForLoaderHide();
+        }
+      }
+
+      // Check immediately
+      checkAndOpenSchedule();
+
+      // Also check after a delay (in case page is still loading)
+      setTimeout(checkAndOpenSchedule, 1200);
+
+      // Also listen for hash changes
+      window.addEventListener('hashchange', checkAndOpenSchedule);
     });
 
     // Form navigation
