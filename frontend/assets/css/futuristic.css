@@ -2428,7 +2428,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .footer-section-title {
-    text-align: center;
+    text-align: center !important;
   }
 
   .footer-nav {
@@ -2544,11 +2544,14 @@ body.dark-mode .kleverr-footer {
 
   /* Section Headings - Center All */
   .heading-20,
-  .heading-21 {
+  .heading-21,
+  .heading-22,
+  .heading-23 {
     text-align: center !important;
   }
 
-  .text-block-37 {
+  .text-block-37,
+  .text-block-41 {
     text-align: center !important;
   }
 
@@ -2744,7 +2747,7 @@ body.dark-mode .kleverr-footer {
   /* Accordion Header - Clickable */
   .footer-accordion-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     cursor: pointer;
     user-select: none;
@@ -2752,6 +2755,7 @@ body.dark-mode .kleverr-footer {
     margin-bottom: 0 !important;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
+    text-align: center !important;
   }
 
   .footer-accordion-header:hover {
