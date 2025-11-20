@@ -1529,6 +1529,12 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateX(4px);
 }
 
+.services-footer-text {
+  color: #FFFFFF !important;
+  margin-top: 16px;
+  font-size: 16px;
+}
+
 /* Fade In Up Animation */
 @keyframes fadeInUp {
   from {
@@ -2502,6 +2508,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .footer-bottom {
     padding: 10px 0;
+    background: transparent !important;
   }
 }
 
@@ -2589,6 +2596,11 @@ body.dark-mode .kleverr-footer {
   .services-main-cta {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .services-footer-text {
+    font-size: 14px;
+    margin-top: 12px;
   }
 
   /* Portfolio Section - Center Everything */
