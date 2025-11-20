@@ -978,6 +978,15 @@ div.navbar-no-shadow,
 </style>
 </head>
 <body class="body-3">
+  <!-- Loading Screen -->
+  <div class="quantum-loader active" id="quantumLoader">
+    <div class="loader-dots">
+      <div class="loader-dot"></div>
+      <div class="loader-dot"></div>
+      <div class="loader-dot"></div>
+    </div>
+  </div>
+
   <!-- Navigation -->
   <div class="navbar-no-shadow">
     <div data-animation="over-left" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-no-shadow-container-2 w-nav">
@@ -1809,5 +1818,6 @@ div.navbar-no-shadow,
       updateProgress(20);
     }
   </script>
+  <script src="assets/js/page-transitions.js" type="text/javascript"></script>
 </body>
 </html>
